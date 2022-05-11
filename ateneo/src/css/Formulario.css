@@ -1,0 +1,16 @@
+.cardregistro {
+    position: relative;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    width: auto;
+    height: 600px;
+    overflow-y: scroll;
+}
+
+.texto-justificado {
+    text-align: justify;
+}
