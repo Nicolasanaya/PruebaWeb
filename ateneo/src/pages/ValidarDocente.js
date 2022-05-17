@@ -22,6 +22,8 @@ import SaveAlt from '@material-ui/icons/SaveAlt';
 import Search from '@material-ui/icons/Search';
 import ViewColumn from '@material-ui/icons/ViewColumn';
 import swal from 'sweetalert';
+import logo from '../img/logo.png';
+
 
 
 const tableIcons = {
@@ -131,13 +133,14 @@ class ValidarDocente extends Component {
                     <Principal />
                     <div id="layoutSidenav_content">
                         <div className='margen-top h-100'>
-                            <div className='d-flex justify-content-center align-items-center h-100'>
+                            {/* <div className='d-flex justify-content-center align-items-center h-100'>
                                 <div className=''>
                                     <div className='card' style={{ borderRadius: '2rem' }}>
-                                        <div className=''>
-                                            <div className='align-items-center'>
+                                        <div className=''> */}
+                                            {/* <div className='align-items-center'> */}
                                                 <div className=' p-4 text-black'>
-                                                    <section className="centrarelementos">
+                                                    <section className="centrarelementos form">
+                                                    <img className="logo" src={logo} alt="logo"></img>
                                                         <h2 className="text-center mb-4">VALIDAR DOCENTE</h2>
                                                     </section>
                                                     <div className="mb-4">
@@ -192,11 +195,11 @@ class ValidarDocente extends Component {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div >
+            //                 </div>
+            //             </div>
+            //         </div>
+            //     </div>
+            // </div >
         );
     }
 }

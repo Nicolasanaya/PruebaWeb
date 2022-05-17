@@ -17,13 +17,13 @@ class AnalisisSatisfaccion extends Component {
     GetanalysisSubjectList = () => {
 
         const config = {
-            headers: {'Authorization': 'Bearer ' + localStorage.getItem("token") }
+            headers: { 'Authorization': 'Bearer ' + localStorage.getItem("token") }
         }
 
         axios.get(baseURL, config)
             .then(response => {
                 this.setState({
-                    analysisSubjectList: response.data.analysisSubjectList,          
+                    analysisSubjectList: response.data.analysisSubjectList,
                     status: true
                 })
                 console.log(response.data);
@@ -33,14 +33,14 @@ class AnalisisSatisfaccion extends Component {
             });
     }
 
-    
+
     componentDidMount = () => {
         this.GetanalysisSubjectList();
     }
 
     render() {
 
-        const data2 = {            
+        const data2 = {
             labels: this.state.analysisSubjectList.map(elem => [elem.subject]),
             datasets: [{
                 label: 'Materias',
@@ -52,7 +52,7 @@ class AnalisisSatisfaccion extends Component {
                 data: this.state.analysisSubjectList.map(elem => [elem.number])
             }]
         };
-        
+
         const options = {
             maintainAspectRatio: false,
             responsive: true
@@ -60,8 +60,8 @@ class AnalisisSatisfaccion extends Component {
         return (
             <div className='sb-nav-fixed'>
                 <div className='row g-0'>
+                    <Principal />
                     <div id="layoutSidenav_content">
-                        <Principal />
                         <div className='margen-top h-100'>
                             <div className=' p-4 text-black'>
                                 <section className="centrarelementos form">

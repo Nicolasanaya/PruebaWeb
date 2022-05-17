@@ -103,9 +103,9 @@ class NotasEstudiantes extends Component {
                                                         </div>
 
                                                         {/* nombre */}
-                                                        <label className="text-center mb-4">Nombre: {this.state.nameLastName}</label>
+                                                        <label className="text-center mb-4"><b>Nombre:</b> {this.state.nameLastName}</label>
                                                         {/* id institucional*/}
-                                                        <label className="text-center mb-4">ID: {this.state.identifier}</label>
+                                                        <label className="text-center mb-4"><b>ID:</b> {this.state.identifier}</label>
 
 
 

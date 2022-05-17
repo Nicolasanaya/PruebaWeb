@@ -131,11 +131,11 @@ class TablaPreguntasEst extends Component {
                 <Principal />
                 <div id="layoutSidenav_content">
                     <div className='margen-top h-100'>
-                        <div className='d-flex justify-content-center align-items-center h-100'>
+                        {/* <div className='d-flex justify-content-center align-items-center h-100'>
                             <div className=''>
                                 <div className='card' style={{ borderRadius: '2rem' }}>
                                     <div className=''>
-                                        <div className='align-items-center'>
+                                        <div className='align-items-center'> */}
                                             <div className=' p-4 text-black'>
                                                 <section className="centrarelementos form">
                                                     <img className="logo" src={logo} alt="logo"></img>
@@ -199,11 +199,11 @@ class TablaPreguntasEst extends Component {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div >
+        //                 </div>
+        //             </div>
+        //         </div>
+        //     </div>
+        // </div >
         );
     }
 }

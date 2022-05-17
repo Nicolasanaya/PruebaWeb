@@ -124,6 +124,7 @@ class ValidarPeticiones extends Component {
         const cooki = new Cookies();
         this.state.datosEst = cooki.get('datosPeticiones')
         return (
+            
             <div className='sb-nav-fixed'>
                 <div className='row g-0'>
                         <Principal />
