@@ -5,7 +5,6 @@ import url from '../Conexions/conexion.js'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 import logo from '../img/logo.png';
-import swal from 'sweetalert';
 import MaterialTable from 'material-table';
 import '@material-ui/icons';
 import { forwardRef } from 'react';

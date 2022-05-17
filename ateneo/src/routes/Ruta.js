@@ -58,6 +58,9 @@ import ES from '../pages/ES';
 import CrearQr from '../pages/CrearQr';
 import EncuestaSatisfaccion from '../pages/EncuestaSatisfaccion';
 import Satisfaccion from '../pages/Satisfaccion';
+import ActualizarFiles from '../pages/ActualizarFiles';
+import AnalisisDocente from '../pages/AnalisisDocente';
+import AnalisisSatisfaccion from '../pages/AnalisisSatisfaccion';
 
 function Ruta(props) {
     return (
@@ -117,7 +120,9 @@ function Ruta(props) {
           <Route path='/CrearQr' element={<CrearQr />} />
           <Route path='/EncuestaSatisfaccion' element={<EncuestaSatisfaccion />} />
           <Route path='/Satisfaccion' element={<Satisfaccion />} />
-
+          <Route path='/ActualizarFiles' element={<ActualizarFiles />} />
+          <Route path='/AnalisisDocente' element={<AnalisisDocente />} />
+          <Route path='/AnalisisSatisfaccion' element={<AnalisisSatisfaccion />} />
 
         </Routes>
       </BrowserRouter>

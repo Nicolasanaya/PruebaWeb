@@ -174,7 +174,7 @@ class NotasModificar extends Component {
 
                             swal({
                                 title: "Nota",
-                                text: "Su registro fue exitoso",
+                                text: "Su Nota fue exitoso",
                                 icon: "success",
                                 buttons: "Aceptar"
                             }).then(function () {
@@ -182,8 +182,8 @@ class NotasModificar extends Component {
                             })
                         } if (res.status === 400) {
                             swal({
-                                title: "Registro",
-                                text: "Verifique los campos de su registro",
+                                title: "Nota",
+                                text: "Verifique los campos de su Nota",
                                 icon: "warning",
                                 buttons: "Aceptar"
                             })
@@ -195,15 +195,15 @@ class NotasModificar extends Component {
 
                         if (error.response.status === 500) {
                             swal({
-                                title: "Registro",
+                                title: "Nota",
                                 text: "Error en el servidor",
                                 icon: "error",
                                 buttons: "Aceptar"
                             })
                         } if (error.response.status === 400) {
                             swal({
-                                title: "Registro",
-                                text: "Verifique los campos de su registro",
+                                title: "Nota",
+                                text: "Verifique los campos de su Nota",
                                 icon: "warning",
                                 buttons: "Aceptar"
                             })
@@ -241,8 +241,8 @@ class NotasModificar extends Component {
                             })
                         } if (res.status === 400) {
                             swal({
-                                title: "Registro",
-                                text: "Verifique los campos de su registro",
+                                title: "Nota",
+                                text: "Verifique los campos de su Nota",
                                 icon: "warning",
                                 buttons: "Aceptar"
                             })
@@ -254,15 +254,15 @@ class NotasModificar extends Component {
 
                         if (error.response.status === 500) {
                             swal({
-                                title: "Registro",
-                                text: "Error en el servidor",
+                                title: "Nota",
+                                text: "Error en el Nota",
                                 icon: "error",
                                 buttons: "Aceptar"
                             })
                         } if (error.response.status === 400) {
                             swal({
-                                title: "Registro",
-                                text: "Verifique los campos de su registro",
+                                title: "Nota",
+                                text: "Verifique los campos de su Nota",
                                 icon: "warning",
                                 buttons: "Aceptar"
                             })

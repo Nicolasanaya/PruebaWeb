@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const baseURL = url.url + "/SocialMedia";
+const baseURL1 = url.url + "/Picture";
 const baseURL2 = url.url + "/Login";
 const baseURL3 = url.url + "/Ping";
 
@@ -16,6 +17,7 @@ class Login extends Component {
         socialMediaList: [],
         userName: '',
         password: '',
+        namepicture: '',
         status: false
     }
 
@@ -29,6 +31,30 @@ class Login extends Component {
             })
             .catch(function (error) {
                 console.log(error.response.status);
+            });
+
+    }
+
+    Peticionesgetfoto = () => {
+        const config = {
+            headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + localStorage.getItem("token") }
+        }
+
+        // console.log(config)
+        axios.get(baseURL1, config)
+            .then(response => {
+                this.setState({
+                    // picture: response.data.picture,
+                    // idpicture: response.data.picture.id,
+                    // namepicture: response.data.picture.name,
+                    urlpicture: response.data.picture.url,
+                    status: true
+                })
+                console.log(response.data)
+            })
+
+            .catch((error) => {
+                console.log(error);
             });
 
     }
@@ -145,6 +171,7 @@ class Login extends Component {
 
     componentDidMount() {
         this.socialmediaget();
+        this.Peticionesgetfoto();
     }
 
     render() {
@@ -157,7 +184,7 @@ class Login extends Component {
                                 <div className='row g-0'>
                                     <div className='col-md-6 col-lg-5 d-none d-md-block'>
                                         <img
-                                            src={require('../img/principal.jpeg')}
+                                            src={this.state.urlpicture}
                                             alt='login form'
                                             className='img-fluid'
                                             style={{ borderRadius: '1rem 0 0 1rem' }}
@@ -194,12 +221,11 @@ class Login extends Component {
                                                     <ul>
                                                         {
                                                             this.state.socialMediaList.map(element =>
-                                                                <li><a href={element.url} key={element.id} className={element.name}><i className={"fab fa-" + element.name}></i></a></li>
+                                                                <li><a target="_blank" href={element.url} key={element.id} className={element.name}><i className={"fab fa-" + element.name}></i></a></li>
                                                             )
                                                         }
                                                     </ul>
                                                 </div>
-
 
                                             </form>
                                         </div>

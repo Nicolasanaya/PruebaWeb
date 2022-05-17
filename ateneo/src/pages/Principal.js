@@ -178,14 +178,21 @@ class Principal extends Component {
                         <NavDropdown.Item href="/RolesEstudiantes">Validar Estudiantes</NavDropdown.Item>
                         <NavDropdown.Item href="/RolDocente">Roles Docentes</NavDropdown.Item>
                     </NavDropdown>
-                    <Nav.Link href="/Materias">MATERIAS</Nav.Link>
+                    <NavDropdown title="ACTUALIZACION" id="basic-nav-dropdown">
+                        <NavDropdown.Item href="/Materias">MATERIAS</NavDropdown.Item>
+                        <NavDropdown.Item href="/CorreoUpdate">CORREO</NavDropdown.Item>
+                        <NavDropdown.Item href="/Lugar">LUGAR</NavDropdown.Item>
+                    </NavDropdown>
                     <Nav.Link href="/Peticiones">PETICIONES</Nav.Link>
-                    <Nav.Link href="/CorreoUpdate">CORREO</Nav.Link>
                     <NavDropdown title="ENCUESTAS" id="basic-nav-dropdown">
                         <NavDropdown.Item href="/encuestas">Encuesta Estudiante</NavDropdown.Item>
                         <NavDropdown.Item href="/EncuestaSatisfaccion">Encuesta Satisfaccion</NavDropdown.Item>
                     </NavDropdown>
-                    <Nav.Link href="/Lugar">LUGAR</Nav.Link>
+                    <NavDropdown title="ANALISIS" id="basic-nav-dropdown">
+                        <NavDropdown.Item href="/AnalisisDocente">Analisis Docente</NavDropdown.Item>
+                        <NavDropdown.Item href="/AnalisisSatisfaccion">Analisis Satisfaccion</NavDropdown.Item>
+                    </NavDropdown>
+                    
                     <NavDropdown title="PREGUNTAS" id="basic-nav-dropdown">
                         <NavDropdown.Item href="/Preguntas">Preguntas</NavDropdown.Item>
                         <NavDropdown.Item href="/TablaPreguntas">Tabla Preguntas</NavDropdown.Item>
@@ -281,6 +288,7 @@ class Principal extends Component {
                     <Nav.Link href="/Roles">ROLES</Nav.Link>
                     <Nav.Link href="/Credenciales">CREDENCIALES</Nav.Link>
                     <Nav.Link href="/Media">MEDIA</Nav.Link>
+                    <Nav.Link href="/ActualizarFiles">ACTUALIZACION</Nav.Link>
                 </Nav>
             )
 

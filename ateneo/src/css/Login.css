@@ -6,11 +6,11 @@
 
 .logo {
     align-content: center;
-    width:auto; 
-    height:60px;
+    width: auto;
+    height: 60px;
     margin-top: 0px;
     margin-bottom: 10px;
-    display:block;
+    display: block;
 
 }
 
@@ -22,11 +22,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
+}
 
 .inputtamaño {
-    width: 400px; 
-    height:auto;
+    width: 400px;
+    height: auto;
     align-content: center;
     justify-content: center;
     align-items: center;
@@ -34,25 +34,26 @@
 
 .mb-4 {
     margin-bottom: 1.5rem !important;
-  }
+}
 
 .form-label {
     margin-bottom: 0.5rem;
-  }
+}
+
 .centrarelementos {
     margin: auto;
     text-align: center;
-    
+
 }
 
-.titulo{
+.titulo {
     color: #F30754;
-    text-align:center;
+    text-align: center;
     font-size: 90px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.izquierda {       
+.izquierda {
     height: 100vh;
     width: 50%;
     text-align: center;
@@ -65,7 +66,7 @@
 
 .pantalladividida {
     display: flex;
-    
+
 }
 
 .body {
@@ -75,7 +76,7 @@
 
 .link {
     color: #F30754;
-    text-align:center;
+    text-align: center;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif
 }
@@ -84,9 +85,9 @@
     min-width: 20px;
     display: flex;
     justify-content: space-around;
-  }
-  
-  .buttons a {
+}
+
+.buttons a {
     text-decoration: none;
     font-size: 20px;
     width: 30px;
@@ -98,82 +99,99 @@
     border-radius: 50%;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
     transition: all .4s ease-in-out;
-  }
-  
-  .buttons a:hover {
+}
+
+.buttons a:hover {
     transform: scale(1.5);
-  }
+}
 
-  :root {
-      --facebook: #3d5999;
-      --instagram: #e4405f;
-      --twitter: #55acee;
-      --youtube: red;
-  }
-  .redes-container {
-      display: flex;
-      height: auto;
-      align-items: center;
-      justify-content: center;
-  }
 
-  .redes-container ul li{
-      display: inline-block;
-      margin: 0 5px;
-      width: 50px;
-      height: 50px;
-      
-      text-align: center;
-  }
-  .redes-container ul li a{
-      display: block;
-      padding: 0 10px;
-      border-radius: 50px;
-      background: #333;
-      color: white;
-      line-height: 50px;
-      font-size: 18px;
-      box-shadow: 0 3px 5px 0px rgba(0, 0, 0, .2);
-      transition: .2s;
-  }
-  .redes-container ul:hover a{
-      filter: blur(2px);
-  }
-  .redes-container ul li a:hover{
-      transform: translateY(-3px) scale(1.05);
-      box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, .4);
-      filter: none;
-  }
-  .redes-container ul li .facebook:hover{
-      background: var(--facebook);
-  }
-  .redes-container ul li .instagram:hover{
+:root {
+    --facebook: #3d5999;
+    --instagram: #e4405f;
+    --twitter: #55acee;
+    --youtube: red;
+    --adn: blue;
+
+}
+
+.redes-container {
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes-container ul li {
+    display: inline-block;
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+
+    text-align: center;
+}
+
+.redes-container ul li a {
+    display: block;
+    padding: 0 10px;
+    border-radius: 50px;
+    background: #333;
+    color: white;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, .2);
+    transition: .2s;
+}
+
+.redes-container ul:hover a {
+    filter: blur(2px);
+}
+
+.redes-container ul li a:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, .4);
+    filter: none;
+}
+
+.redes-container ul li .facebook:hover {
+    background: var(--facebook);
+}
+
+.redes-container ul li .instagram:hover {
     background: var(--instagram);
 }
-.redes-container ul li .twitter:hover{
+
+.redes-container ul li .twitter:hover {
     background: var(--twitter);
 }
-.redes-container ul li .youtube:hover{
+
+.redes-container ul li .youtube:hover {
     background: var(--youtube);
 }
-.inline{
-    max-width:400px;
-    margin:auto;
+
+.redes-container ul li .adn:hover {
+    background: var(--adn);
 }
+
+.inline {
+    max-width: 400px;
+    margin: auto;
+}
+
 .input-icons i {
     position: absolute;
 }
-  
+
 .input-icons {
     width: 100%;
     margin-bottom: 10px;
 }
-  
+
 .icon {
     padding: 10px;
     min-width: 40px;
 }
-  
+
 .input-field {
     width: 100%;
     padding: 10px;
@@ -181,7 +199,7 @@
     margin-bottom: 3px;
 }
 
-.boton-color{
-    background: linear-gradient(to right,#FF0040,#B23EFF);
+.boton-color {
+    background: linear-gradient(to right, #FF0040, #B23EFF);
     color: #000;
 }

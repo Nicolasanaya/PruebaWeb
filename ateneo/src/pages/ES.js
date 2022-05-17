@@ -117,17 +117,17 @@ class ES extends Component {
             if (resp.status === 200) {
 
                 swal({
-                    title: "Pregunta",
-                    text: "Su Pregunta fue exitosa",
+                    title: "ENCUESTA",
+                    text: "Su Encuesta fue exitosa",
                     icon: "success",
                     buttons: "Aceptar"
                 }).then(function () {
-                    window.location.reload(true);
+                    window.location = "/";
                 })
             } if (resp.status === 400) {
                 swal({
-                    title: "Pregunta",
-                    text: "No se encontro la Pregunta",
+                    title: "ENCUESTA",
+                    text: "No se realizo la Encuesta",
                     icon: "warning",
                     buttons: "Aceptar"
                 })
@@ -140,21 +140,21 @@ class ES extends Component {
             // console.log(res); 
             if (error.response.status === 400) {
                 swal({
-                    title: "Pregunta",
+                    title: "ENCUESTA",
                     text: "Comuniquese con el soporte",
                     icon: "warning",
                     buttons: "Aceptar"
                 });
             } else if (error.response.status === 404) {
                 swal({
-                    title: "Pregunta",
+                    title: "ENCUESTA",
                     text: "Comuniquese con el soporte",
                     icon: "warning",
                     buttons: "Aceptar"
                 });
             } else if (error.response.status === 401) {
                 swal({
-                    title: "Pregunta",
+                    title: "ENCUESTA",
                     text: "Comuniquese con el soporte",
                     icon: "warning",
                     buttons: "Aceptar"

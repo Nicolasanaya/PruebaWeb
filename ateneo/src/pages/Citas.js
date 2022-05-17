@@ -91,8 +91,8 @@ class Citas extends Component {
                 if (res.status === 200) {
 
                     swal({
-                        title: "CITA",
-                        text: "Su cita fue Asignada",
+                        title: "CONSEJERIA",
+                        text: "Su CONSEJERIA fue Asignada",
                         icon: "success",
                         buttons: "Aceptar"
                     }).then(function () {
@@ -100,7 +100,7 @@ class Citas extends Component {
                     })
                 } if (res.status === 400) {
                     swal({
-                        title: "CITA",
+                        title: "CONSEJERIA",
                         text: "Verifique los campos",
                         icon: "warning",
                         buttons: "Aceptar"
@@ -112,14 +112,14 @@ class Citas extends Component {
             }).catch(function (error) {
                 if (error.response.status === 500) {
                     swal({
-                        title: "CITA",
+                        title: "CONSEJERIA",
                         text: "Error en el servidor",
                         icon: "error",
                         buttons: "Aceptar"
                     })
                 } if (error.response.status === 400) {
                     swal({
-                        title: "CITA",
+                        title: "CONSEJERIA",
                         text: "Verifique los campos",
                         icon: "warning",
                         buttons: "Aceptar"

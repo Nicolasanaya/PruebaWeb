@@ -59,17 +59,17 @@ class Media extends Component {
 
                 }
 
-            }).catch(res => {
-                console.log(res.status);
+            }).catch(function (error) {
+                // console.log(res.status);
 
-                if (res.status === 500) {
+                if (error.response.status === 500) {
                     swal({
                         title: "RED SOCIAL",
                         text: "Error en el servidor",
                         icon: "error",
                         buttons: "Aceptar"
                     })
-                } if (res.status === 400) {
+                } if (error.response.status === 400) {
                     swal({
                         title: "RED SOCIAL",
                         text: "Verifique los campos",

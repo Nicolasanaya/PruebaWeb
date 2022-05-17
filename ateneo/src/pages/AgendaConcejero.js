@@ -148,8 +148,8 @@ class AgendaConcejero extends Component {
             if (res.status === 200) {
 
                 swal({
-                    title: "CITA",
-                    text: "Su CITA se elimino con exitoso",
+                    title: "CONSEJERIA",
+                    text: "Su CONSEJERIA se elimino con exitoso",
                     icon: "success",
                     buttons: "Aceptar"
                 }).then(function () {
@@ -157,7 +157,7 @@ class AgendaConcejero extends Component {
                 })
             } if (res.status === 400) {
                 swal({
-                    title: "CITA",
+                    title: "CONSEJERIA",
                     text: "Verifique la tabla",
                     icon: "warning",
                     buttons: "Aceptar"
@@ -170,14 +170,14 @@ class AgendaConcejero extends Component {
 
             if (error.response.status === 500) {
                 swal({
-                    title: "CITA",
+                    title: "CONSEJERIA",
                     text: "Error en el servidor",
                     icon: "error",
                     buttons: "Aceptar"
                 })
             } if (error.response.status === 400) {
                 swal({
-                    title: "CITA",
+                    title: "CONSEJERIA",
                     text: "Verifique los campos",
                     icon: "warning",
                     buttons: "Aceptar"
@@ -240,7 +240,7 @@ class AgendaConcejero extends Component {
                                                                                 <MDBCardSubTitle><b>Fecha =</b> {elem.date}</MDBCardSubTitle>
                                                                                 <MDBCardSubTitle><b>Tiempo =</b> {elem.time}</MDBCardSubTitle>
                                                                                 <MDBCardSubTitle><b>Lugar =</b> {elem.place}</MDBCardSubTitle>
-                                                                                <MDBCardSubTitle><b>url =</b> <a href={elem.url}> link</a> </MDBCardSubTitle>
+                                                                                <MDBCardSubTitle><b>url =</b> <a target="_blank" href={elem.url}> link</a> </MDBCardSubTitle>
                                                                                 <div className="form-group row">
                                                                                     <IconButton aria-label="Eliminar" sx={{ fontSize: 40 }} id={elem.id} onClick={(e) => this.editar(elem.id, e)}>
                                                                                         <EditIcon fontSize="inherit" sx={{ fontSize: 50,color: '#000'  }}/>

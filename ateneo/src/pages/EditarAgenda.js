@@ -128,8 +128,8 @@ class EditarAgenda extends Component {
                 if (res.status === 200) {
 
                     swal({
-                        title: "CITA",
-                        text: "Su cita fue Actualizada",
+                        title: "CONSEJERIA",
+                        text: "Su CONSEJERIA fue Actualizada",
                         icon: "success",
                         buttons: "Aceptar"
                     }).then(function () {
@@ -137,7 +137,7 @@ class EditarAgenda extends Component {
                     })
                 } if (res.status === 400) {
                     swal({
-                        title: "CITA",
+                        title: "CONSEJERIA",
                         text: "Verifique los campos",
                         icon: "warning",
                         buttons: "Aceptar"
@@ -150,14 +150,14 @@ class EditarAgenda extends Component {
 
                 if (error.response.status === 500) {
                     swal({
-                        title: "CITA",
+                        title: "CONSEJERIA",
                         text: "Error en el servidor",
                         icon: "error",
                         buttons: "Aceptar"
                     })
                 } if (error.response.status === 400) {
                     swal({
-                        title: "CITA",
+                        title: "CONSEJERIA",
                         text: "Verifique los campos",
                         icon: "warning",
                         buttons: "Aceptar"
@@ -219,7 +219,7 @@ class EditarAgenda extends Component {
                                                         </div>
 
                                                         <div className="form-group row mb-4">
-                                                            <label htmlFor="text" className="col-sm-4 col-form-label">Fecha Inicial</label>
+                                                            <label htmlFor="text" className="col-sm-4 col-form-label">Fecha Final</label>
                                                             <div className="col-sm-8">
                                                                 <MuiPickersUtilsProvider utils={DateFnsUtils}>
                                                                     <DateTimePicker value={this.state.timefinal} format="yyyy-MM-dd hh:mm:ss" label={"Fecha Final" + this.state.endDateTime} name='timefinal' id='timefinal' onChange={this.handleChangefinal} />

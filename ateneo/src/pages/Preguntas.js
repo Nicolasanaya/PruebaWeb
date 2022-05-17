@@ -68,7 +68,7 @@ class Preguntas extends Component {
                     icon: "success",
                     buttons: "Aceptar"
                 }).then(function () {
-                    window.location = "/";
+                    window.location = "/Principal";
                 })
             } if (resp.status === 400) {
                 swal({

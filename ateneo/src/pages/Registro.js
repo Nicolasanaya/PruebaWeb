@@ -9,6 +9,8 @@ const baseURL = url.url + "/Registry/User_Types";
 const baseURL2 = url.url + "/Registry/Academic_program";
 const baseURL3 = url.url + "/Registry/Document_Type";
 const baseURL4 = url.url + "/Registry/create_user";
+const baseURL5 = url.url + "/TermintermsAndConditions";
+
 
 class Registro extends Component {
     state = {
@@ -24,84 +26,11 @@ class Registro extends Component {
         DocumentNumber: '',
         AcademicProgram: '',
         Password: '',
+        urltermintermsandconditions: '',
         Photo: null,
         TermAndConditions: true,
         status: false
     }
-
-
-    // PostHorario = (event) => {
-    //     // event.preventDefault();
-    //     const config = {
-    //         headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + localStorage.getItem("token") }
-    //     }
-    //     // console.log(config);
-
-    //     const data = {
-    //         "connectionDB": {
-    //             "host": this.state.host,
-    //             "dataBaseName": this.state.dataBaseName,
-    //             "userName": this.state.userName,
-    //             "password": this.state.password,
-    //         },
-    //         "connectionEmail": {
-    //             "stmp": this.state.stmp,
-    //             "port": this.state.port,
-    //             "userName": this.state.userNameEmail,
-    //             "password": this.state.passwordEmail,
-    //         },
-    //     }
-    //     console.log(data);
-
-    //     axios.post(baseURL, data, config)
-    //         .then(res => {
-    //             console.log(res.status);
-
-    //             if (res.status === 200) {
-
-    //                 swal({
-    //                     title: "CREDENCIALES",
-    //                     text: "Su credenciales fue Asignada",
-    //                     icon: "success",
-    //                     buttons: "Aceptar"
-    //                 }).then(function () {
-    //                     window.location = "/Credenciales";
-    //                 })
-    //             } if (res.status === 400) {
-    //                 swal({
-    //                     title: "CREDENCIALES",
-    //                     text: "Verifique los campos",
-    //                     icon: "warning",
-    //                     buttons: "Aceptar"
-    //                 })
-    //             } else {
-
-    //             }
-
-    //         }).catch(res => {
-    //             console.log(res.status);
-
-    //             if (res.status === 500) {
-    //                 swal({
-    //                     title: "CREDENCIALES",
-    //                     text: "Error en el servidor",
-    //                     icon: "error",
-    //                     buttons: "Aceptar"
-    //                 })
-    //             } if (res.status === 400) {
-    //                 swal({
-    //                     title: "CREDENCIALES",
-    //                     text: "Verifique los campos",
-    //                     icon: "warning",
-    //                     buttons: "Aceptar"
-    //                 })
-    //             } else {
-
-    //             }
-
-    //         })
-
-    // }
 
     comprobar(obj) {
         if (obj.checked)
@@ -118,7 +47,7 @@ class Registro extends Component {
                     userTypesList: response.data.userTypesList,
                     status: true
                 })
-                //console.log(response);
+                console.log(response.data.userTypesList);
             })
             .catch((error) => {
                 console.log(error);
@@ -157,6 +86,7 @@ class Registro extends Component {
         this.cargartiposdeusuario();
         this.cargarprogramas();
         this.cargardocumentos();
+        this.Peticionesget();
 
     }
 
@@ -182,7 +112,7 @@ class Registro extends Component {
 
     }
 
-    fileUploadHandler = () => {
+    fileUploadHandler = (event) => {
         // event.preventDefault();
 
         if (document.getElementById('Password').value === document.getElementById('Passwordconf').value) {
@@ -256,11 +186,33 @@ class Registro extends Component {
 
     }
 
+    Peticionesget = () => {
+        const config = {
+            headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + localStorage.getItem("token") }
+        }
+
+        // console.log(config)
+        axios.get(baseURL5, config)
+            .then(response => {
+                this.setState({
+                    // termintermsandconditions: response.data.termintermsandconditions,
+                    // idtermintermsandconditions: response.data.termintermsandconditions.id,
+                    // nametermintermsandconditions: response.data.termintermsandconditions.name,
+                    urltermintermsandconditions: response.data.termintermsandconditions.url,
+                    status: true
+                })
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+
+    }
+
     mostrar() {
         // if (document.getElementById('Password').value == document.getElementById('Password').value) {
         //     document.getElementById('div-mostrar').style.display = "block";            
         // }
-        if (document.getElementById('UserType').value === 2) {
+        if (document.getElementById('UserType').value == 2) {
             document.getElementById('div-mostrar').style.display = "none";
         } else {
             document.getElementById('div-mostrar').style.display = "block";
@@ -378,12 +330,12 @@ class Registro extends Component {
                                             <div className="form-check">
                                                 <input className="form-check-input" type="checkbox" id="TermAndConditions" name="TermAndConditions" onChange={this.handleChange} required />
                                                 <label className="form-check-label" htmlFor="defaultCheck1" >
-                                                    Aceptar <a href="url" >Terminos y Condiciones</a>
+                                                    Aceptar <a target="_blank" href={this.state.urltermintermsandconditions} >Terminos y Condiciones</a>
                                                 </label>
                                             </div>
 
                                             <div className="mb-4 centrarelementos">
-                                                <button type="button" id='boton' className="boton-color col-sm-4 btn btn-outline-dark" onClick={this.fileUploadHandler}> REGISTRAR</button>
+                                                <button type="submit" id='boton' className="boton-color col-sm-4 btn btn-outline-dark" onClick={this.fileUploadHandler}> REGISTRAR</button>
                                             </div>
 
                                             {/* <div className="form-outline mb-4">

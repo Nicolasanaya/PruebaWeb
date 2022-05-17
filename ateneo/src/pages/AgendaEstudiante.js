@@ -225,7 +225,7 @@ class AgendaEstudiante extends Component {
                                                                                 <MDBCardSubTitle><b>Fecha =</b> {elem.date}</MDBCardSubTitle>
                                                                                 <MDBCardSubTitle><b>Tiempo =</b> {elem.time}</MDBCardSubTitle>
                                                                                 <MDBCardSubTitle><b>Lugar =</b> {elem.place}</MDBCardSubTitle>
-                                                                                <MDBCardSubTitle><b>url =</b> <a href={elem.url}> link</a> </MDBCardSubTitle>
+                                                                                <MDBCardSubTitle><b>url =</b> <a target="_blank" href={elem.url}> link</a> </MDBCardSubTitle>
                                                                                 <div className="form-group row">
                                                                                     <IconButton aria-label="Eliminar" sx={{ fontSize: 40 }} id={elem.id} onClick={(e) => this.deleteRow(elem.id, e)}>
                                                                                         <DeleteForeverIcon fontSize="inherit" sx={{ fontSize: 50, color: '#000' }} />

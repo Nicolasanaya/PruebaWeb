@@ -76,7 +76,7 @@ class Respuesta extends Component {
 
         const Photo = this.state.Photo;
         const formData = new FormData();
-        formData.append('Introduction', this.state.Introduction);
+        formData.append('Introduction', this.state.introduction);
         formData.append('AnswerUrl', this.state.AnswerUrl);
         formData.append('AnswerFile', Photo);
 
@@ -151,8 +151,6 @@ class Respuesta extends Component {
             document.getElementById('div-mostrardos').style.display = "none";
         }
     }
-
-
 
     render() {
         const cooki = new Cookies();

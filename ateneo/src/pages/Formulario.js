@@ -333,13 +333,13 @@ class Formulario extends Component {
                                                 <div className="form-outline mb-4">
                                                     <p className='texto-justificado'>La siguiente encuesta tiene como objetivo conocer sus apreciaciones referentes a su desarrollo
                                                         académico en el presente semestre respecto a las asignaturas ofrecidas por el Departamento de
-                                                        Ciencias Básicas. Es importante que señale sus dificultades para brindarle apoyo y acompañamiento
+                                                        Ciencias Básicas. Es importante que señale sus necesidades para brindarle apoyo y acompañamiento
                                                         mediante las diferentes estrategias que ofrece la universidad y particularmente el Departamento de
                                                         Ciencias Básicas a través de su estrategia denominada ATENEO.</p>
                                                 </div>
 
                                                 <div className="form-outline mb-4">
-                                                    <label htmlFor="text" className="col-form-label texto-justificado">1.Elija por favor de la siguiente lista, la asignatura que está cursando referente al docente quien le ha compartido esta encuesta.</label>
+                                                    <label htmlFor="text" className="col-form-label texto-justificado">1.Elija por favor de la siguiente lista, la asignatura que corresponde al docente que le ha compartido esta encuesta.</label>
                                                     <Select isMulti options={option} onChange={this.handleChange1} name='subjects' id='subjects' required></Select>
                                                 </div>
 
@@ -359,9 +359,7 @@ class Formulario extends Component {
 
                                                 <div className="form-outline mb-4">
                                                     <label htmlFor="text" className="col-form-label texto-justificado">
-                                                        3.A continuación, encontrará causas que podrían justificar las dificultades en su rendimiento académico. Por favor ordenarlas desde la menos
-                                                        (10) hasta la más influyente (1): (tenga en cuenta que 10 corresponde a la menos influyente y sucesivamente hasta la número 1 que
-                                                        corresponde a la más influyente)
+                                                        3.A continuación, encontrará posibles causas que influyen en el bajo rendimiento académico. Por favor ordénelas de acuerdo a su caso, de la menor (1) a la de mayor (10) influencia.
                                                     </label>
                                                 </div>
 
@@ -387,7 +385,7 @@ class Formulario extends Component {
                                                 {/* estatico */}
                                                 {/* primera pregunta */}
                                                 <div className="form-outline mb-4">
-                                                    <label htmlFor="text" className="col-form-label" name='labelquestionsAnswers' id='labelquestionsAnswers'>1 - Malas bases del colegio.</label>
+                                                    <label htmlFor="text" className="col-form-label" name='labelquestionsAnswers' id='labelquestionsAnswers'>1 -- Presaberes insuficientes.</label>
 
                                                     <select className="form-select" aria-label="Default select example" name='questionsAnswers' id='questionsAnswers' onChange={this.handleChange} required>
                                                         <option selected>Seleccione una opcion</option>
@@ -405,7 +403,7 @@ class Formulario extends Component {
                                                 </div>
                                                 {/* Segunda pregunta */}
                                                 <div className="form-outline mb-4">
-                                                    <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers2' id='labelquestionsAnswers2'>2 -- Falta de estudio.</label>
+                                                    <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers2' id='labelquestionsAnswers2'>2 -- Inadecuados métodos de estudio.</label>
                                                     <select className="form-select" aria-label="Default select example" name='questionsAnswers2' id='questionsAnswers2' onChange={this.handleChange} required>
                                                         <option selected>Seleccione una opcion</option>
                                                         <option key={1} value="1">1</option>
@@ -439,7 +437,7 @@ class Formulario extends Component {
                                                 </div>
                                                 {/* cuarta pregunta */}
                                                 <div className="form-outline mb-4">
-                                                    <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers4' id='labelquestionsAnswers4'>4 -- Pereza al estudiar..</label>
+                                                    <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers4' id='labelquestionsAnswers4'>4 -- Pereza al estudiar.</label>
                                                     <select className="form-select" aria-label="Default select example" name='questionsAnswers4' id='questionsAnswers4' onChange={this.handleChange} required>
                                                         <option selected>Seleccione una opcion</option>
                                                         <option key={1} value="1">1</option>
@@ -473,7 +471,7 @@ class Formulario extends Component {
                                                 </div>
                                                 {/* sexta pregunta */}
                                                 <div className="form-outline mb-4">
-                                                    <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers6' id='labelquestionsAnswers6'>6 -- Frecuentemente, no viene a clase.</label>
+                                                    <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers6' id='labelquestionsAnswers6'>6 -- Ausentismo (inasistencia frecuente) a clase.</label>
                                                     <select className="form-select" aria-label="Default select example" name='questionsAnswers6' id='questionsAnswers6' onChange={this.handleChange} required>
                                                         <option selected>Seleccione una opcion</option>
                                                         <option key={1} value="1">1</option>
@@ -507,7 +505,7 @@ class Formulario extends Component {
                                                 </div>
                                                 {/* octava pregunta */}
                                                 <div className="form-outline mb-4">
-                                                    <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers8' id='labelquestionsAnswers8'>8 -- No tiene un libro guía.</label>
+                                                    <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers8' id='labelquestionsAnswers8'>8 -- No consulta el libro guía.</label>
                                                     <select className="form-select" aria-label="Default select example" name='questionsAnswers8' id='questionsAnswers8' onChange={this.handleChange} required>
                                                         <option selected>Seleccione una opcion</option>
                                                         <option key={1} value="1">1</option>
@@ -541,7 +539,7 @@ class Formulario extends Component {
                                                 </div>
                                                 {/* decima pregunta */}
                                                 <div className="form-outline mb-4">
-                                                    <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers10' id='labelquestionsAnswers10'>10 -- No aprovecha el tiempo libre.</label>
+                                                    <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers10' id='labelquestionsAnswers10'>10 -- Inadecuado aprovechamiento del tiempo.</label>
                                                     <select className="form-select" aria-label="Default select example" name='questionsAnswers10' id='questionsAnswers10' onChange={this.handleChange} required>
                                                         <option selected>Seleccione una opcion</option>
                                                         <option key={1} value="1">1</option>
@@ -597,7 +595,7 @@ class Formulario extends Component {
                                                 </div>
                                                 {/* trece pregunta */}
                                                 <div className="form-outline mb-4">
-                                                    <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers13' id='labelquestionsAnswers13'>13 -- Malas amistades.</label>
+                                                    <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers13' id='labelquestionsAnswers13'>13 -- Influencia negativa de compañeros o conocidos.</label>
                                                     <select className="form-select" aria-label="Default select example" name='questionsAnswers13' id='questionsAnswers13' onChange={this.handleChange} required>
                                                         <option selected>Seleccione una opcion</option>
                                                         <option key={1} value="1">1</option>
@@ -614,7 +612,7 @@ class Formulario extends Component {
                                                 </div>
                                                 {/* catorce pregunta */}
                                                 <div className="form-outline mb-4">
-                                                    <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers14' id='labelquestionsAnswers14'>14 -- Vicios: alcohol, drogas, apuestas, etc.</label>
+                                                    <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers14' id='labelquestionsAnswers14'>14 -- Consumo de alcohol u otras sustancias psicoactivas.</label>
                                                     <select className="form-select" aria-label="Default select example" name='questionsAnswers14' id='questionsAnswers14' onChange={this.handleChange} required>
                                                         <option selected>Seleccione una opcion</option>
                                                         <option key={1} value="1">1</option>
@@ -631,7 +629,7 @@ class Formulario extends Component {
                                                 </div>
                                                 {/* quince pregunta */}
                                                 <div className="form-outline mb-4">
-                                                    <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers15' id='labelquestionsAnswers15'>15 -- Está obligado a estudiar la carrera.</label>
+                                                    <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers15' id='labelquestionsAnswers15'>15 -- Presión de otros para estudiar la carrara actual.</label>
                                                     <select className="form-select" aria-label="Default select example" name='questionsAnswers15' id='questionsAnswers15' onChange={this.handleChange} required>
                                                         <option selected>Seleccione una opcion</option>
                                                         <option key={1} value="1">1</option>
@@ -648,7 +646,7 @@ class Formulario extends Component {
                                                 </div>
                                                 {/* diez y seis pregunta */}
                                                 <div className="form-outline mb-4">
-                                                    <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers16' id='labelquestionsAnswers16'>16 -- Viene a la universidad, pero no entra a clase.</label>
+                                                    <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers16' id='labelquestionsAnswers16'>16 -- No ingresa a clase a pesar de estar en el campus.</label>
                                                     <select className="form-select" aria-label="Default select example" name='questionsAnswers16' id='questionsAnswers16' onChange={this.handleChange} required>
                                                         <option selected>Seleccione una opcion</option>
                                                         <option key={1} value="1">1</option>
@@ -666,7 +664,7 @@ class Formulario extends Component {
                                                 </div>
                                                 {/* diez y siete pregunta */}
                                                 <div className="form-outline mb-4">
-                                                    <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers17' id='labelquestionsAnswers17'>17 -- Tiene muchos problemas familiares.</label>
+                                                    <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers17' id='labelquestionsAnswers17'>17 -- Dificultades familiares.</label>
 
                                                     <select className="form-select" aria-label="Default select example" name='questionsAnswers17' id='questionsAnswers17' onChange={this.handleChange} required>
                                                         <option selected>Seleccione una opcion</option>
@@ -685,7 +683,7 @@ class Formulario extends Component {
                                                 </div>
                                                 {/* diezocho pregunta */}
                                                 <div className="form-outline mb-4">
-                                                    <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers18' id='labelquestionsAnswers18'>18 -- No le alcanza el tiempo porque trabaja.</label>
+                                                    <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers18' id='labelquestionsAnswers18'>18 -- No le alcanza el tiempo por compromisos laborales.</label>
 
                                                     <select className="form-select" aria-label="Default select example" name='questionsAnswers18' id='questionsAnswers18' onChange={this.handleChange} required>
                                                         <option selected>Seleccione una opcion</option>
@@ -720,6 +718,11 @@ class Formulario extends Component {
                                                         <option key={10} value="10">10</option>
                                                     </select>
 
+                                                </div>
+                                                <div className="form-outline mb-4">
+                                                    <label htmlFor="text" className="col-form-label texto-justificado">
+                                                        3.A continuación, encontrará posibles causas que influyen en el bajo rendimiento académico. Por favor ordénelas de acuerdo a su caso, de la menor (1) a la de mayor (5) influencia.
+                                                    </label>
                                                 </div>
                                                 {/* veinte pregunta */}
                                                 <div className="form-outline mb-4">
@@ -765,7 +768,7 @@ class Formulario extends Component {
                                                 </div>
                                                 {/* veintetres pregunta */}
                                                 <div className="form-outline mb-4">
-                                                    <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers23' id='labelquestionsAnswers23'>23 -- Tiene muchos problemas económicos.</label>
+                                                    <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers23' id='labelquestionsAnswers23'>23 -- Dificultades económicas.</label>
 
                                                     <select className="form-select" aria-label="Default select example" name='questionsAnswers23' id='questionsAnswers23' onChange={this.handleChange} required>
                                                         <option selected>Seleccione una opcion</option>
@@ -779,7 +782,7 @@ class Formulario extends Component {
                                                 </div>
                                                 {/* veinticuatro pregunta */}
                                                 <div className="form-outline mb-4">
-                                                    <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers24' id='labelquestionsAnswers24'>24 -- Al presentar las evaluaciones, se siente: Cansado, temeroso, estresado o ansioso.</label>
+                                                    <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers24' id='labelquestionsAnswers24'>24 -- Siente cansancio, temor, estrés o ansiedad.</label>
 
                                                     <select className="form-select" aria-label="Default select example" name='questionsAnswers24' id='questionsAnswers24' onChange={this.handleChange} required>
                                                         <option selected>Seleccione una opcion</option>
