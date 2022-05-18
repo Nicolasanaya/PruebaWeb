@@ -52,8 +52,8 @@ class TablaPreguntasEst extends Component {
         questions: [],
         subjects: [],
         respuesta: '',
-        Verrespuesta:'',
-        EditPregunta:'',
+        Verrespuesta: '',
+        EditPregunta: '',
         id: '',
         show: false,
         status: false
@@ -127,83 +127,83 @@ class TablaPreguntasEst extends Component {
         ))
         return (
             <div className='sb-nav-fixed'>
-            <div className='row g-0'>
-                <Principal />
-                <div id="layoutSidenav_content">
-                    <div className='margen-top h-100'>
-                        {/* <div className='d-flex justify-content-center align-items-center h-100'>
+                <div className='row g-0'>
+                    <Principal />
+                    <div id="layoutSidenav_content">
+                        <div className='margen-top h-100'>
+                            {/* <div className='d-flex justify-content-center align-items-center h-100'>
                             <div className=''>
                                 <div className='card' style={{ borderRadius: '2rem' }}>
                                     <div className=''>
                                         <div className='align-items-center'> */}
-                                            <div className=' p-4 text-black'>
-                                                <section className="centrarelementos form">
-                                                    <img className="logo" src={logo} alt="logo"></img>
-                                                    <h2 className="text-center mb-4">PREGUNTAS MATERIA</h2>
-                                                </section>
-                                                <form >
-                                                    <div className="form-outline mb-4">
-                                                        <label htmlFor="text" >MATERIA</label>
+                            <div className=' p-4 text-black'>
+                                <section className="centrarelementos form">
+                                    <img className="logo" src={logo} alt="logo"></img>
+                                    <h2 className="text-center mb-4">PREGUNTAS MATERIA</h2>
+                                </section>
+                                <form >
+                                    <div className="form-outline mb-4">
+                                        <label htmlFor="text" >MATERIA</label>
 
-                                                        <select className="form-select tamañoinput" aria-label="Default select example" name='subjects' id='subjects' onChange={this.handleChange}>
-                                                            <option value="100">Seleccione una opcion</option>
-                                                            {this.state.subjects.map(element => (
-                                                                <option key={element.id} value={element.id} >{element.name}</option>
-                                                            )
-                                                            )}
-                                                        </select>
-                                                    </div>
-
-                                                    <div className="mb-4 centrarelementos">
-                                                        <button type="button" className="btn btn-outline-dark form-label boton-color" onClick={this.DatosPreguntas}>BUSCAR</button>
-                                                    </div>
-                                                </form>
-                                                <div className="mb-4">
-
-                                                    <MaterialTable
-                                                        title={"Preguntas Frecuentes"}
-                                                        data={data}
-                                                        columns={columns}
-                                                        icons={tableIcons}
-                                                        actions={[                                            
-                                                            {
-                                                                icon: Check,
-                                                                tooltip: 'Ver Respuestas',
-                                                                onClick: (event, rowData) => {
-                                                                    this.VerRespuestas(rowData)
-                                                                }
-                                                            }
-                                                        ]}
-                                                        options={{
-                                                            // ..other options
-                                                            exportButton: {
-                                                                csv: true,
-                                                                pdf: true
-                                                            },
-                                                            actionsColumnIndex: -1
-                                                        }}
-                                                        localization={{
-                                                            toolbar: {
-                                                                exportCSVName: "Exportar csv",
-                                                                exportPDFName: "Exportar pdf!!"
-                                                            },
-                                                            headers: {
-                                                                actions: "Acciones"
-                                                            }
-                                                        }}
-                                                    />
-                                                </div>
-
-                                            </div>
-                                        </div>
+                                        <select className="form-select tamañoinput" aria-label="Default select example" name='subjects' id='subjects' onChange={this.handleChange}>
+                                            <option value="100">Seleccione una opcion</option>
+                                            {this.state.subjects.map(element => (
+                                                <option key={element.id} value={element.id} >{element.name}</option>
+                                            )
+                                            )}
+                                        </select>
                                     </div>
+
+                                    <div className="mb-4 centrarelementos">
+                                        <button type="button" className="btn btn-outline-dark form-label boton-color" onClick={this.DatosPreguntas}>BUSCAR</button>
+                                    </div>
+                                </form>
+                                <div className="mb-4">
+
+                                    <MaterialTable
+                                        title={"Preguntas Frecuentes"}
+                                        data={data}
+                                        columns={columns}
+                                        icons={tableIcons}
+                                        actions={[
+                                            {
+                                                icon: Check,
+                                                tooltip: 'Ver Respuestas',
+                                                onClick: (event, rowData) => {
+                                                    this.VerRespuestas(rowData)
+                                                }
+                                            }
+                                        ]}
+                                        options={{
+                                            // ..other options
+                                            exportButton: {
+                                                csv: true,
+                                                pdf: true
+                                            },
+                                            actionsColumnIndex: -1
+                                        }}
+                                        localization={{
+                                            toolbar: {
+                                                exportCSVName: "Exportar csv",
+                                                exportPDFName: "Exportar pdf!!"
+                                            },
+                                            headers: {
+                                                actions: "Acciones"
+                                            }
+                                        }}
+                                    />
                                 </div>
+
                             </div>
-        //                 </div>
-        //             </div>
-        //         </div>
-        //     </div>
-        // </div >
+                        </div>
+                    </div>
+                </div>
+            </div>
+            //                 </div>
+            //             </div>
+            //         </div>
+            //     </div>
+            // </div >
         );
     }
 }
