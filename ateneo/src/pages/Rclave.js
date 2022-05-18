@@ -117,7 +117,7 @@ class Rclave extends Component {
                     })
                 } if (res.status === 400) {
                     swal({
-                        title: "CODIGO",
+                        title: "CÓDIGO",
                         text: "Verifique los campos",
                         icon: "warning",
                         buttons: "Aceptar"
@@ -131,14 +131,14 @@ class Rclave extends Component {
 
                 if (error.response.status === 500) {
                     swal({
-                        title: "CODIGO",
+                        title: "CÓDIGO",
                         text: "Error en el servidor",
                         icon: "error",
                         buttons: "Aceptar"
                     })
                 } if (error.response.status === 400) {
                     swal({
-                        title: "CODIGO",
+                        title: "CÓDIGO",
                         text: "Verifique los campos",
                         icon: "warning",
                         buttons: "Aceptar"
@@ -180,7 +180,7 @@ class Rclave extends Component {
                                                 <div id='div-mostrar'>
 
                                                     <div className="form-outline mb-4">
-                                                        <label htmlFor="text" className="col-form-label">Codigo</label>
+                                                        <label htmlFor="text" className="col-form-label">Código</label>
                                                         <input type="text" className="form-control" name='code' id='code' onChange={this.handleChange} required></input>
                                                     </div>
 

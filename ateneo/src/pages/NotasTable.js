@@ -133,7 +133,7 @@ class NotasTable extends Component {
 
                 swal({
                     title: "Nota",
-                    text: "Su Nota se elimino con exitoso",
+                    text: "Su Nota se eliminó  con exitoso",
                     icon: "success",
                     buttons: "Aceptar"
                 }).then(function () {

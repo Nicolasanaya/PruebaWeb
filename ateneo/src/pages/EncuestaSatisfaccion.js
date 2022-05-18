@@ -126,7 +126,7 @@ class EncuestaSatisfaccion extends Component {
                                                 <div className=' p-4 text-black'>
                                                     <section className="centrarelementos form">
                                                         <img className="logo" src={logo} alt="logo"></img>
-                                                        <h2 className="text-center mb-4">Tabla de Satisfaccion</h2>
+                                                        <h2 className="text-center mb-4">Tabla de Satisfacción</h2>
                                                     </section>
                                                     <div className="mb-4">
 

@@ -143,7 +143,7 @@ class TablaPreguntas extends Component {
 
                 swal({
                     title: "Pregunta",
-                    text: "Su Pregunta se elimino con exitoso",
+                    text: "Su Pregunta se eliminó  con exitoso",
                     icon: "success",
                     buttons: "Aceptar"
                 }).then(function () {
@@ -198,7 +198,7 @@ class TablaPreguntas extends Component {
                                                             <label htmlFor="text" >MATERIA</label>
 
                                                             <select className="form-select tamañoinput" aria-label="Default select example" name='subjects' id='subjects' onChange={this.handleChange}>
-                                                                <option value="100">Seleccione una opcion</option>
+                                                                <option value="100">Seleccione una opción</option>
                                                                 {this.state.subjects.map(element => (
                                                                     <option key={element.id} value={element.id} >{element.name}</option>
                                                                 )

@@ -78,7 +78,7 @@ class AnalisisDocente extends Component {
 
     render() {
         const data2 = {
-            labels: ['malo', 'normal', 'bueno', 'muysatisfactorio', 'genial'],
+            labels: ['malo', 'normal', 'bueno', 'muy satisfactorio', 'genial'],
             datasets: [{
                 backgroundColor: ['red', '#FE5500', '#FEC100', '#49FE00', '#04A104'],
                 data: [this.state.bad, this.state.regular, this.state.good, this.state.verySatisfactory, this.state.great]
@@ -103,14 +103,14 @@ class AnalisisDocente extends Component {
 
                                                     <section className="centrarelementos form">
                                                         <img className="logo" src={logo} alt="logo"></img>
-                                                        <h3 className="text-center mb-4">ANALISIS SATISFACCION DEL DOCENTE</h3>
+                                                        <h3 className="text-center mb-4">ANÁLISIS SATISFACCIÓN DEL DOCENTE</h3>
                                                     </section>
                                                     <form className='centrarelementos'>
                                                         <div className="form-group row mb-4">
                                                             <label htmlFor="text" className="col-sm-4 col-form-label">Docente</label>
                                                             <div className="col-sm-8">
                                                                 <select className="form-select" aria-label="Default select example" name='UserType' id='UserType' onChange={this.handleChange} required>
-                                                                    <option value="100">Seleccione una opcion</option>
+                                                                    <option value="100">Seleccione una opción</option>
                                                                     {this.state.teacherList.map(element => (
                                                                         <option key={element.id} value={element.id}>{element.fullNameTeacher}</option>
                                                                     )

@@ -119,7 +119,7 @@ class Roles extends Component {
                                                     <div className="mb-4">
 
                                                         <MaterialTable
-                                                            title={"Habilitacion de cuentas Docentes"}
+                                                            title={"Habilitación de cuentas Docentes"}
                                                             data={data}
                                                             columns={columns}
                                                             icons={tableIcons}

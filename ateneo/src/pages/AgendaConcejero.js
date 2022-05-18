@@ -149,7 +149,7 @@ class AgendaConcejero extends Component {
 
                 swal({
                     title: "CONSEJERIA",
-                    text: "Su CONSEJERIA se elimino con exitoso",
+                    text: "Su CONSEJERIA se eliminó con exitoso",
                     icon: "success",
                     buttons: "Aceptar"
                 }).then(function () {

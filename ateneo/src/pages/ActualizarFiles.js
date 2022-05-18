@@ -108,8 +108,8 @@ class ActualizarFiles extends Component {
                 if (res.status === 200) {
 
                     swal({
-                        title: "ACTUALIZACION ",
-                        text: "Su actualizacion fue creada exitosomente",
+                        title: "ACTUALIZACIÓN ",
+                        text: "Su actualización fue creada exitosamente",
                         icon: "success",
                         buttons: "Aceptar"
                     }).then(function () {
@@ -117,7 +117,7 @@ class ActualizarFiles extends Component {
                     })
                 } if (res.status === 400) {
                     swal({
-                        title: "ACTUALIZACION",
+                        title: "ACTUALIZACIÓN",
                         text: "Verifique los campos",
                         icon: "warning",
                         buttons: "Aceptar"
@@ -164,7 +164,7 @@ class ActualizarFiles extends Component {
                                                 <div className=' p-4 text-black'>
                                                     <section className="centrarelementos form">
                                                         <img className="logo" src={logo} alt="logo"></img>
-                                                        <b><h2 className="text-center mb-4">ACTUALIZACION ARCHIVOS</h2></b>
+                                                        <b><h2 className="text-center mb-4">ACTUALIZACIÓN ARCHIVOS</h2></b>
                                                     </section>
 
                                                     <form className="mb-4">
@@ -173,9 +173,9 @@ class ActualizarFiles extends Component {
                                                             <label htmlFor="text" className="col-sm-3 col-form-label">Tipo de Solicitud</label>
                                                             <div className="col-sm-9">
                                                                 <select className="form-select" aria-label="Default select example" name="Solicitud" id='Solicitud' onChange={this.handleChange}>
-                                                                    <option value="100">Seleccione una opcion</option>
+                                                                    <option value="100">Seleccione una opción</option>
                                                                     <option id={this.state.idpicture} value={this.state.idpicture}>Foto Pricipal</option>
-                                                                    <option id={this.state.idtermintermsandconditions} value={this.state.idtermintermsandconditions}>Terminos y Condiciones</option>
+                                                                    <option id={this.state.idtermintermsandconditions} value={this.state.idtermintermsandconditions}>Terminós y Condiciones</option>
                                                                 </select>
                                                             </div>
                                                         </div>

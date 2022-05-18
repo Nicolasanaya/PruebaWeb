@@ -72,7 +72,7 @@ class CorreoUpdate extends Component {
 
                     swal({
                         title: "Email",
-                        text: "Su Email se actualizo con exito",
+                        text: "Su Email se actualizo con éxito",
                         icon: "success",
                         buttons: "Aceptar"
                     }).then(function () {
@@ -127,7 +127,7 @@ class CorreoUpdate extends Component {
                                                 <div className=' p-4 text-black'>
                                                     <section className="centrarelementos form">
                                                         <img className="logo" src={logo} alt="logo"></img>
-                                                        <h3 className="text-center mb-4">ACTUALIZACION CORREO USUARIOS</h3>
+                                                        <h3 className="text-center mb-4">ACTUALIZACIÓN CORREO USUARIOS</h3>
                                                     </section>
 
                                                     <form className='centrarelementos'>

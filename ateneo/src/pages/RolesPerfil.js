@@ -81,7 +81,7 @@ class RolesPerfil extends Component {
 
                     swal({
                         title: "Rol",
-                        text: "Su rol se actualizo con exito",
+                        text: "Su rol se actualizo con éxito",
                         icon: "success",
                         buttons: "Aceptar"
                     }).then(function () {
@@ -153,7 +153,7 @@ class RolesPerfil extends Component {
                                                         {/* checkbox */}
                                                         <div className="form-check form-switch">
                                                             <input className="form-check-input" type="checkbox" id="accountStatus" name='accountStatus' checked={this.state.accountStatus} onChange={this.handleChange} />
-                                                            <label className="form-check-label" htmlFor="laboratoryState">Desabilitar o habilitar Docente</label>
+                                                            <label className="form-check-label" htmlFor="laboratoryState">Deshabilitar  o habilitar Docente</label>
                                                         </div>
 
                                                         <div className="mb-4 centrarelementos">

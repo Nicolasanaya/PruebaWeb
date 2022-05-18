@@ -129,8 +129,8 @@ class Tutorias extends Component {
             if (res.status === 200) {
 
                 swal({
-                    title: "TUTORIA",
-                    text: "Su TUTORIA se asigno con exitoso",
+                    title: "TUTORÍA",
+                    text: "Su TUTORÍA se asigno con exitoso",
                     icon: "success",
                     buttons: "Aceptar"
                 }).then(function () {
@@ -138,8 +138,8 @@ class Tutorias extends Component {
                 })
             } if (res.status === 400) {
                 swal({
-                    title: "TUTORIA",
-                    text: "Verifique la informacion",
+                    title: "TUTORÍA",
+                    text: "Verifique la información",
                     icon: "warning",
                     buttons: "Aceptar"
                 })
@@ -151,14 +151,14 @@ class Tutorias extends Component {
             if (error.response.status === 401) {
 
                 swal({
-                    title: "TUTORIA",
+                    title: "TUTORÍA",
                     text: "NO TIENE AUTORIZACION",
                     icon: "success",
                     buttons: "Aceptar"
                 })
             } if (error.response.status === 500) {
                 swal({
-                    title: "TUTORIA",
+                    title: "TUTORÍA",
                     text: "Error del sevidor",
                     icon: "warning",
                     buttons: "Aceptar"

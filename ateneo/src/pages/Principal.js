@@ -188,9 +188,9 @@ class Principal extends Component {
                         <NavDropdown.Item href="/encuestas">Encuesta Estudiante</NavDropdown.Item>
                         <NavDropdown.Item href="/EncuestaSatisfaccion">Encuesta Satisfaccion</NavDropdown.Item>
                     </NavDropdown>
-                    <NavDropdown title="ANALISIS" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="/AnalisisDocente">Analisis Docente</NavDropdown.Item>
-                        <NavDropdown.Item href="/AnalisisSatisfaccion">Analisis Satisfaccion</NavDropdown.Item>
+                    <NavDropdown title="ANÁLISIS" id="basic-nav-dropdown">
+                        <NavDropdown.Item href="/AnalisisDocente">Análisis Docente</NavDropdown.Item>
+                        <NavDropdown.Item href="/AnalisisSatisfaccion">Análisis Satisfaccion</NavDropdown.Item>
                     </NavDropdown>
                     
                     <NavDropdown title="PREGUNTAS" id="basic-nav-dropdown">
@@ -344,9 +344,9 @@ class Principal extends Component {
                 <Nav>
                     <Nav.Link href="/Notastable">NOTAS</Nav.Link>
                     <Nav.Link href="/AgendaEstudiante">AGENDA</Nav.Link>
-                    <NavDropdown title="TUTORIAS" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="/Tutorias">Tutorias Consejeros</NavDropdown.Item>
-                        <NavDropdown.Item href="/AteneoTutorias">Tutorias Ateneo</NavDropdown.Item>
+                    <NavDropdown title="TUTORÍAS" id="basic-nav-dropdown">
+                        <NavDropdown.Item href="/Tutorias">TutorÍas Consejeros</NavDropdown.Item>
+                        <NavDropdown.Item href="/AteneoTutorias">TutorÍas Ateneo</NavDropdown.Item>
                     </NavDropdown>
                     <NavDropdown title="PREGUNTAS Y RESPUESTAS" id="basic-nav-dropdown">
                         <NavDropdown.Item href="/Generarpregunta">Generar Preguntas</NavDropdown.Item>

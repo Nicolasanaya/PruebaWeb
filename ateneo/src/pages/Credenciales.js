@@ -100,7 +100,7 @@ class Credenciales extends Component {
 
                     swal({
                         title: "CREDENCIALES",
-                        text: "Su credenciales fue Asignada",
+                        text: "Sus credenciales fue Asignada",
                         icon: "success",
                         buttons: "Aceptar"
                     }).then(function () {
@@ -162,7 +162,7 @@ class Credenciales extends Component {
                                                         <h2 className="text-center mb-4">CREDENCIALES</h2>
                                                     </div>
                                                     <form >
-                                                        <h3 className="text-center mb-4">Credenciales de Conexion base de datos</h3>
+                                                        <h3 className="text-center mb-4">Credenciales de Conexión base de datos</h3>
 
                                                         <div className="form-group row mb-4">
                                                             <label htmlFor="text" className="col-sm-3 col-form-label">host</label>

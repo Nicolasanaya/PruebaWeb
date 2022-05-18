@@ -199,7 +199,7 @@ class ES extends Component {
                                                             <label htmlFor="text" >MATERIA</label>
 
                                                             <select className="form-select tamañoinput" aria-label="Default select example" name='subjects' id='subjects' onChange={this.handleChange}>
-                                                                <option value="100">Seleccione una opcion</option>
+                                                                <option value="100">Seleccione una opción</option>
                                                                 {this.state.subjects.map(element => (
                                                                     <option key={element.id} value={element.id} >{element.subject}</option>
                                                                 )
@@ -212,7 +212,7 @@ class ES extends Component {
                                                             <label htmlFor="text" >MOTIVO DE LA CONSULTA</label>
 
                                                             <select className="form-select tamañoinput" aria-label="Default select example" name='reasonConsultationId' id='reasonConsultationId' onChange={this.handleChange}>
-                                                                <option value="100">Seleccione una opcion</option>
+                                                                <option value="100">Seleccione una opción</option>
                                                                 {this.state.reasonConsultations.map(element => (
                                                                     <option key={element.id} value={element.id} >{element.name}</option>
                                                                 )
@@ -224,7 +224,7 @@ class ES extends Component {
                                                         <div className="form-outline mb-4">
                                                             <label htmlFor="text" >CALIFICACION</label>
                                                             <select className="form-select tamañoinput" aria-label="Default select example" name='athenaeumExperienceId' id='athenaeumExperienceId' onChange={this.handleChange}>
-                                                                <option value="100">Seleccione una opcion</option>
+                                                                <option value="100">Seleccione una opción</option>
                                                                 {this.state.athenaeumExperiences.map(element => (
                                                                     <option key={element.id} value={element.id} >{element.name}</option>
                                                                 )

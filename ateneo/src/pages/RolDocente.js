@@ -121,7 +121,7 @@ class RolDocente extends Component {
                                                     <div className="mb-4">
 
                                                         <MaterialTable
-                                                            title={"Habilitacion de permisos Docentes"}
+                                                            title={"Habilitación  de permisos Docentes"}
                                                             data={data}
                                                             columns={columns}
                                                             icons={tableIcons}

@@ -78,7 +78,7 @@ class ValidarPeticiones extends Component {
 
                     swal({
                         title: "Peticion",
-                        text: "Su Peticion se actualizo con exito",
+                        text: "Su Peticion se actualizo con éxito",
                         icon: "success",
                         buttons: "Aceptar"
                     }).then(function () {

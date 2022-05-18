@@ -116,21 +116,21 @@ class EditarPregunta extends Component {
             if (error.response.status === 400) {
                 swal({
                     title: "Pregunta",
-                    text: "Comuniquese con el soporte",
+                    text: "Comuníquese con el soporte",
                     icon: "warning",
                     buttons: "Aceptar"
                 });
             } else if (error.response.status === 404) {
                 swal({
                     title: "Pregunta",
-                    text: "Comuniquese con el soporte",
+                    text: "Comuníquese con el soporte",
                     icon: "warning",
                     buttons: "Aceptar"
                 });
             } else if (error.response.status === 401) {
                 swal({
                     title: "Pregunta",
-                    text: "Comuniquese con el soporte",
+                    text: "Comuníquese con el soporte",
                     icon: "warning",
                     buttons: "Aceptar"
                 });

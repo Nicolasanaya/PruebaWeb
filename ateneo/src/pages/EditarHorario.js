@@ -193,7 +193,7 @@ class EditarHorario extends Component {
 
                     swal({
                         title: "HORARIO",
-                        text: "Su horario fue Asignada",
+                        text: "Su horario fue Asignado",
                         icon: "success",
                         buttons: "Aceptar"
                     }).then(function () {
@@ -295,7 +295,7 @@ class EditarHorario extends Component {
                                                             <div className="col-sm-9">
                                                                 <select className="form-select" aria-label="Default select example" name="places" id='places' onChange={this.handleChangedemas}>
                                                                     <option value={this.state.lugarid}>{this.state.sitio}</option>
-                                                                    <option value="100">Seleccione una opcion</option>
+                                                                    <option value="100">Seleccione una opción</option>
                                                                     {this.state.places.map(element => (
                                                                         <option key={element.id} value={element.id}>{element.name}</option>
                                                                     )

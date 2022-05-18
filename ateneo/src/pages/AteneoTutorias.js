@@ -57,15 +57,15 @@ class AteneoTutorias extends Component {
 
                 if (error.response.status === 500) {
                     swal({
-                        title: "TUTORIA",
+                        title: "TUTORÍA",
                         text: "Error en el servidor",
                         icon: "error",
                         buttons: "Aceptar"
                     })
                 } if (error.response.status === 400) {
                     swal({
-                        title: "TUTORIA",
-                        text: "No tiene citas el dia Seleccionado",
+                        title: "TUTORÍA",
+                        text: "No tiene citas el día Seleccionado",
                         icon: "warning",
                         buttons: "Aceptar"
                     })
@@ -93,15 +93,15 @@ class AteneoTutorias extends Component {
 
                 if (error.response.status === 500) {
                     swal({
-                        title: "TUTORIA",
+                        title: "TUTORÍA",
                         text: "Error en el servidor",
                         icon: "error",
                         buttons: "Aceptar"
                     })
                 } if (error.response.status === 400) {
                     swal({
-                        title: "TUTORIA",
-                        text: "No tiene citas el dia Seleccionado",
+                        title: "TUTORÍA",
+                        text: "No tiene citas el día Seleccionado",
                         icon: "warning",
                         buttons: "Aceptar"
                     })
@@ -132,7 +132,7 @@ class AteneoTutorias extends Component {
 
                 swal({
                     title: "ATENEO",
-                    text: "Su ATENEO tutoria se asigno con exitoso",
+                    text: "Su ATENEO tutoría se asigno con exitoso",
                     icon: "success",
                     buttons: "Aceptar"
                 }).then(function () {
@@ -188,7 +188,7 @@ class AteneoTutorias extends Component {
                                                 <div className='align-items-center'>
                                                     <div className=' p-4 text-black'>
                                                         <section className="centrarelementos">
-                                                            <h2 className="text-center mb-4">ATENEO TUTORIAS</h2>
+                                                            <h2 className="text-center mb-4">ATENEO TUTORÍAS</h2>
                                                         </section>
                                                         <form className="form">
                                                             <div className="mb-4 centrarelementos">

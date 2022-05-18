@@ -42,8 +42,8 @@ class Pqr extends Component {
             if (resp.status === 200) {
 
                 swal({
-                    title: "Peticion",
-                    text: "Su peticion fue exitosa",
+                    title: "petición ",
+                    text: "Su petición  fue exitosa",
                     icon: "success",
                     buttons: "Aceptar"
                 }).then(function () {
@@ -51,8 +51,8 @@ class Pqr extends Component {
                 })
             } if (resp.status === 400) {
                 swal({
-                    title: "Peticion",
-                    text: "No se encontro la peticion",
+                    title: "petición ",
+                    text: "No se encontro la petición ",
                     icon: "warning",
                     buttons: "Aceptar"
                 })
@@ -65,22 +65,22 @@ class Pqr extends Component {
             // console.log(res); 
             if (error.response.status === 400) {
                 swal({
-                    title: "Peticion",
-                    text: "Comuniquese con el soporte",
+                    title: "petición ",
+                    text: "Comuníquese con el soporte",
                     icon: "warning",
                     buttons: "Aceptar"
                 });
             } else if (error.response.status === 404) {
                 swal({
-                    title: "Peticion",
-                    text: "Comuniquese con el soporte",
+                    title: "petición ",
+                    text: "Comuníquese con el soporte",
                     icon: "warning",
                     buttons: "Aceptar"
                 });
             } else if (error.response.status === 401) {
                 swal({
-                    title: "Peticion",
-                    text: "Comuniquese con el soporte",
+                    title: "petición ",
+                    text: "Comuníquese con el soporte",
                     icon: "warning",
                     buttons: "Aceptar"
                 });
@@ -88,7 +88,7 @@ class Pqr extends Component {
             } else if (error.response.status === 500) {
                 swal({
                     title: "Servicio al Cliente",
-                    text: "Comuniquese con el soporte",
+                    text: "Comuníquese con el soporte",
                     icon: "warning",
                     buttons: "Aceptar"
                 });
@@ -138,7 +138,7 @@ class Pqr extends Component {
                                                         <b><h2 className="text-center mb-4">PETICIONES</h2></b>
 
                                                         <div className="form-outline mb-4">
-                                                            <label htmlFor="text" className=" mb-4">TIPO DE PETICION</label>
+                                                            <label htmlFor="text" className=" mb-4">TIPO DE PETICIÓN</label>
                                                            
                                                                 <select className="form-select tamañoinput" aria-label="Default select example" name='Petition' id='Petition' onChange={this.handleChange}>
                                                                     <option value="100">Seleccione una opcion</option>

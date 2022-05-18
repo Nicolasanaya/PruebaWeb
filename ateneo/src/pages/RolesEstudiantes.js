@@ -110,12 +110,12 @@ class RolesEstudiantes extends Component {
                                             <div className='align-items-center'> */}
                                                 <div className=' p-4 text-black'>
                                                     <section className="centrarelementos">
-                                                        <h2 className="text-center mb-4">Permisos estudiates</h2>
+                                                        <h2 className="text-center mb-4">Permisos estudiantes</h2>
                                                     </section>
                                                     <div className="mb-4">
 
                                                         <MaterialTable
-                                                            title={"Permisos estudiates"}
+                                                            title={"Permisos estudiantes"}
                                                             data={data}
                                                             columns={columns}
                                                             icons={tableIcons}

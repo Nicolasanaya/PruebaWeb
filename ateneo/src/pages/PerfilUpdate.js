@@ -118,8 +118,8 @@ class PerfilUpdate extends Component {
                 console.log(res.status);
                 if (res.status === 200) {
                     swal({
-                        title: "ACTUALIZACION",
-                        text: "Su actualizacion fue exitoso",
+                        title: "ACTUALIZACIÓN",
+                        text: "Su actualización  fue exitoso",
                         icon: "success",
                         buttons: "Aceptar"
                     }).then(function () {
@@ -127,8 +127,8 @@ class PerfilUpdate extends Component {
                     })
                 } if (res.status === 400) {
                     swal({
-                        title: "ACTUALIZACION",
-                        text: "Verifique los campos de su actualizacion",
+                        title: "ACTUALIZACIÓN",
+                        text: "Verifique los campos de su actualización ",
                         icon: "warning",
                         buttons: "Aceptar"
                     })
@@ -140,15 +140,15 @@ class PerfilUpdate extends Component {
                 // console.log(res.status);
                 if (error.response.status === 500) {
                     swal({
-                        title: "ACTUALIZACION",
+                        title: "ACTUALIZACIÓN",
                         text: "Error en el servidor",
                         icon: "error",
                         buttons: "Aceptar"
                     })
                 } if (error.response.status === 400) {
                     swal({
-                        title: "ACTUALIZACION",
-                        text: "Verifique los campos de su actualizacion",
+                        title: "ACTUALIZACIÓN",
+                        text: "Verifique los campos de su actualización ",
                         icon: "warning",
                         buttons: "Aceptar"
                     })

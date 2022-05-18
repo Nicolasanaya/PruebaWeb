@@ -388,7 +388,7 @@ class Formulario extends Component {
                                                     <label htmlFor="text" className="col-form-label" name='labelquestionsAnswers' id='labelquestionsAnswers'>1 -- Presaberes insuficientes.</label>
 
                                                     <select className="form-select" aria-label="Default select example" name='questionsAnswers' id='questionsAnswers' onChange={this.handleChange} required>
-                                                        <option selected>Seleccione una opcion</option>
+                                                        <option selected>Seleccione una opción</option>
                                                         <option key={1} value="1">1</option>
                                                         <option key={2} value="2">2</option>
                                                         <option key={3} value="3">3</option>
@@ -405,7 +405,7 @@ class Formulario extends Component {
                                                 <div className="form-outline mb-4">
                                                     <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers2' id='labelquestionsAnswers2'>2 -- Inadecuados métodos de estudio.</label>
                                                     <select className="form-select" aria-label="Default select example" name='questionsAnswers2' id='questionsAnswers2' onChange={this.handleChange} required>
-                                                        <option selected>Seleccione una opcion</option>
+                                                        <option selected>Seleccione una opción</option>
                                                         <option key={1} value="1">1</option>
                                                         <option key={2} value="2">2</option>
                                                         <option key={3} value="3">3</option>
@@ -422,7 +422,7 @@ class Formulario extends Component {
                                                 <div className="form-outline mb-4">
                                                     <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers3' id='labelquestionsAnswers3'>3 -- Vacíos conceptuales de años anteriores..</label>
                                                     <select className="form-select" aria-label="Default select example" name='questionsAnswers3' id='questionsAnswers3' onChange={this.handleChange} required>
-                                                        <option selected>Seleccione una opcion</option>
+                                                        <option selected>Seleccione una opción</option>
                                                         <option key={1} value="1">1</option>
                                                         <option key={2} value="2">2</option>
                                                         <option key={3} value="3">3</option>
@@ -439,7 +439,7 @@ class Formulario extends Component {
                                                 <div className="form-outline mb-4">
                                                     <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers4' id='labelquestionsAnswers4'>4 -- Pereza al estudiar.</label>
                                                     <select className="form-select" aria-label="Default select example" name='questionsAnswers4' id='questionsAnswers4' onChange={this.handleChange} required>
-                                                        <option selected>Seleccione una opcion</option>
+                                                        <option selected>Seleccione una opción</option>
                                                         <option key={1} value="1">1</option>
                                                         <option key={2} value="2">2</option>
                                                         <option key={3} value="3">3</option>
@@ -456,7 +456,7 @@ class Formulario extends Component {
                                                 <div className="form-outline mb-4">
                                                     <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers5' id='labelquestionsAnswers5'>5 -- Dificultad en los nuevos temas de la asignatura.</label>
                                                     <select className="form-select" aria-label="Default select example" name='questionsAnswers5' id='questionsAnswers5' onChange={this.handleChange} required>
-                                                        <option selected>Seleccione una opcion</option>
+                                                        <option selected>Seleccione una opción</option>
                                                         <option key={1} value="1">1</option>
                                                         <option key={2} value="2">2</option>
                                                         <option key={3} value="3">3</option>
@@ -473,7 +473,7 @@ class Formulario extends Component {
                                                 <div className="form-outline mb-4">
                                                     <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers6' id='labelquestionsAnswers6'>6 -- Ausentismo (inasistencia frecuente) a clase.</label>
                                                     <select className="form-select" aria-label="Default select example" name='questionsAnswers6' id='questionsAnswers6' onChange={this.handleChange} required>
-                                                        <option selected>Seleccione una opcion</option>
+                                                        <option selected>Seleccione una opción</option>
                                                         <option key={1} value="1">1</option>
                                                         <option key={2} value="2">2</option>
                                                         <option key={3} value="3">3</option>
@@ -490,7 +490,7 @@ class Formulario extends Component {
                                                 <div className="form-outline mb-4">
                                                     <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers7' id='labelquestionsAnswers7'>7 -- No toma apuntes en clase.</label>
                                                     <select className="form-select" aria-label="Default select example" name='questionsAnswers7' id='questionsAnswers7' onChange={this.handleChange} required>
-                                                        <option selected>Seleccione una opcion</option>
+                                                        <option selected>Seleccione una opción</option>
                                                         <option key={1} value="1">1</option>
                                                         <option key={2} value="2">2</option>
                                                         <option key={3} value="3">3</option>
@@ -507,7 +507,7 @@ class Formulario extends Component {
                                                 <div className="form-outline mb-4">
                                                     <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers8' id='labelquestionsAnswers8'>8 -- No consulta el libro guía.</label>
                                                     <select className="form-select" aria-label="Default select example" name='questionsAnswers8' id='questionsAnswers8' onChange={this.handleChange} required>
-                                                        <option selected>Seleccione una opcion</option>
+                                                        <option selected>Seleccione una opción</option>
                                                         <option key={1} value="1">1</option>
                                                         <option key={2} value="2">2</option>
                                                         <option key={3} value="3">3</option>
@@ -524,7 +524,7 @@ class Formulario extends Component {
                                                 <div className="form-outline mb-4">
                                                     <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers9' id='labelquestionsAnswers9'>9 -- Dificultades para concentrarse.</label>
                                                     <select className="form-select" aria-label="Default select example" name='questionsAnswers9' id='questionsAnswers9' onChange={this.handleChange} required>
-                                                        <option selected>Seleccione una opcion</option>
+                                                        <option selected>Seleccione una opción</option>
                                                         <option key={1} value="1">1</option>
                                                         <option key={2} value="2">2</option>
                                                         <option key={3} value="3">3</option>
@@ -541,7 +541,7 @@ class Formulario extends Component {
                                                 <div className="form-outline mb-4">
                                                     <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers10' id='labelquestionsAnswers10'>10 -- Inadecuado aprovechamiento del tiempo.</label>
                                                     <select className="form-select" aria-label="Default select example" name='questionsAnswers10' id='questionsAnswers10' onChange={this.handleChange} required>
-                                                        <option selected>Seleccione una opcion</option>
+                                                        <option selected>Seleccione una opción</option>
                                                         <option key={1} value="1">1</option>
                                                         <option key={2} value="2">2</option>
                                                         <option key={3} value="3">3</option>
@@ -560,7 +560,7 @@ class Formulario extends Component {
                                                     <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers11' id='labelquestionsAnswers11'>11 -- Se distrae muy fácilmente.</label>
 
                                                     <select className="form-select" aria-label="Default select example" name='questionsAnswers11' id='questionsAnswers11' onChange={this.handleChange} required>
-                                                        <option selected>Seleccione una opcion</option>
+                                                        <option selected>Seleccione una opción</option>
                                                         <option key={1} value="1">1</option>
                                                         <option key={2} value="2">2</option>
                                                         <option key={3} value="3">3</option>
@@ -579,7 +579,7 @@ class Formulario extends Component {
                                                     <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers12' id='labelquestionsAnswers12'>12 -- Se distrae en clase con sus compañeros.</label>
 
                                                     <select className="form-select" aria-label="Default select example" name='questionsAnswers12' id='questionsAnswers12' onChange={this.handleChange} required>
-                                                        <option selected>Seleccione una opcion</option>
+                                                        <option selected>Seleccione una opción</option>
                                                         <option key={1} value="1">1</option>
                                                         <option key={2} value="2">2</option>
                                                         <option key={3} value="3">3</option>
@@ -597,7 +597,7 @@ class Formulario extends Component {
                                                 <div className="form-outline mb-4">
                                                     <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers13' id='labelquestionsAnswers13'>13 -- Influencia negativa de compañeros o conocidos.</label>
                                                     <select className="form-select" aria-label="Default select example" name='questionsAnswers13' id='questionsAnswers13' onChange={this.handleChange} required>
-                                                        <option selected>Seleccione una opcion</option>
+                                                        <option selected>Seleccione una opción</option>
                                                         <option key={1} value="1">1</option>
                                                         <option key={2} value="2">2</option>
                                                         <option key={3} value="3">3</option>
@@ -614,7 +614,7 @@ class Formulario extends Component {
                                                 <div className="form-outline mb-4">
                                                     <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers14' id='labelquestionsAnswers14'>14 -- Consumo de alcohol u otras sustancias psicoactivas.</label>
                                                     <select className="form-select" aria-label="Default select example" name='questionsAnswers14' id='questionsAnswers14' onChange={this.handleChange} required>
-                                                        <option selected>Seleccione una opcion</option>
+                                                        <option selected>Seleccione una opción</option>
                                                         <option key={1} value="1">1</option>
                                                         <option key={2} value="2">2</option>
                                                         <option key={3} value="3">3</option>
@@ -631,7 +631,7 @@ class Formulario extends Component {
                                                 <div className="form-outline mb-4">
                                                     <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers15' id='labelquestionsAnswers15'>15 -- Presión de otros para estudiar la carrara actual.</label>
                                                     <select className="form-select" aria-label="Default select example" name='questionsAnswers15' id='questionsAnswers15' onChange={this.handleChange} required>
-                                                        <option selected>Seleccione una opcion</option>
+                                                        <option selected>Seleccione una opción</option>
                                                         <option key={1} value="1">1</option>
                                                         <option key={2} value="2">2</option>
                                                         <option key={3} value="3">3</option>
@@ -648,7 +648,7 @@ class Formulario extends Component {
                                                 <div className="form-outline mb-4">
                                                     <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers16' id='labelquestionsAnswers16'>16 -- No ingresa a clase a pesar de estar en el campus.</label>
                                                     <select className="form-select" aria-label="Default select example" name='questionsAnswers16' id='questionsAnswers16' onChange={this.handleChange} required>
-                                                        <option selected>Seleccione una opcion</option>
+                                                        <option selected>Seleccione una opción</option>
                                                         <option key={1} value="1">1</option>
                                                         <option key={2} value="2">2</option>
                                                         <option key={3} value="3">3</option>
@@ -667,7 +667,7 @@ class Formulario extends Component {
                                                     <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers17' id='labelquestionsAnswers17'>17 -- Dificultades familiares.</label>
 
                                                     <select className="form-select" aria-label="Default select example" name='questionsAnswers17' id='questionsAnswers17' onChange={this.handleChange} required>
-                                                        <option selected>Seleccione una opcion</option>
+                                                        <option selected>Seleccione una opción</option>
                                                         <option key={1} value="1">1</option>
                                                         <option key={2} value="2">2</option>
                                                         <option key={3} value="3">3</option>
@@ -686,7 +686,7 @@ class Formulario extends Component {
                                                     <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers18' id='labelquestionsAnswers18'>18 -- No le alcanza el tiempo por compromisos laborales.</label>
 
                                                     <select className="form-select" aria-label="Default select example" name='questionsAnswers18' id='questionsAnswers18' onChange={this.handleChange} required>
-                                                        <option selected>Seleccione una opcion</option>
+                                                        <option selected>Seleccione una opción</option>
                                                         <option key={1} value="1">1</option>
                                                         <option key={2} value="2">2</option>
                                                         <option key={3} value="3">3</option>
@@ -705,7 +705,7 @@ class Formulario extends Component {
                                                     <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers19' id='labelquestionsAnswers19'>19 -- No le entiende al docente.</label>
 
                                                     <select className="form-select" aria-label="Default select example" name='questionsAnswers19' id='questionsAnswers19' onChange={this.handleChange} required>
-                                                        <option selected>Seleccione una opcion</option>
+                                                        <option selected>Seleccione una opción</option>
                                                         <option key={1} value="1">1</option>
                                                         <option key={2} value="2">2</option>
                                                         <option key={3} value="3">3</option>
@@ -729,7 +729,7 @@ class Formulario extends Component {
                                                     <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers20' id='labelquestionsAnswers20'>20 -- Se distrae en clase con el celular.</label>
 
                                                     <select className="form-select" aria-label="Default select example" name='questionsAnswers20' id='questionsAnswers20' onChange={this.handleChange} required>
-                                                        <option selected>Seleccione una opcion</option>
+                                                        <option selected>Seleccione una opción</option>
                                                         <option key={1} value="1">1</option>
                                                         <option key={2} value="2">2</option>
                                                         <option key={3} value="3">3</option>
@@ -743,7 +743,7 @@ class Formulario extends Component {
                                                     <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers21' id='labelquestionsAnswers21'>21 -- Sus padres no lo apoyan en la carrera que eligió.</label>
 
                                                     <select className="form-select" aria-label="Default select example" name='questionsAnswers21' id='questionsAnswers21' onChange={this.handleChange} required>
-                                                        <option selected>Seleccione una opcion</option>
+                                                        <option selected>Seleccione una opción</option>
                                                         <option key={1} value="1">1</option>
                                                         <option key={2} value="2">2</option>
                                                         <option key={3} value="3">3</option>
@@ -757,7 +757,7 @@ class Formulario extends Component {
                                                     <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers22' id='labelquestionsAnswers22'>22 -- No le gusta la carrera que eligió.</label>
 
                                                     <select className="form-select" aria-label="Default select example" name='questionsAnswers22' id='questionsAnswers22' onChange={this.handleChange} required>
-                                                        <option selected>Seleccione una opcion</option>
+                                                        <option selected>Seleccione una opción</option>
                                                         <option key={1} value="1">1</option>
                                                         <option key={2} value="2">2</option>
                                                         <option key={3} value="3">3</option>
@@ -771,7 +771,7 @@ class Formulario extends Component {
                                                     <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers23' id='labelquestionsAnswers23'>23 -- Dificultades económicas.</label>
 
                                                     <select className="form-select" aria-label="Default select example" name='questionsAnswers23' id='questionsAnswers23' onChange={this.handleChange} required>
-                                                        <option selected>Seleccione una opcion</option>
+                                                        <option selected>Seleccione una opción</option>
                                                         <option key={1} value="1">1</option>
                                                         <option key={2} value="2">2</option>
                                                         <option key={3} value="3">3</option>
@@ -785,7 +785,7 @@ class Formulario extends Component {
                                                     <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers24' id='labelquestionsAnswers24'>24 -- Siente cansancio, temor, estrés o ansiedad.</label>
 
                                                     <select className="form-select" aria-label="Default select example" name='questionsAnswers24' id='questionsAnswers24' onChange={this.handleChange} required>
-                                                        <option selected>Seleccione una opcion</option>
+                                                        <option selected>Seleccione una opción</option>
                                                         <option key={1} value="1">1</option>
                                                         <option key={2} value="2">2</option>
                                                         <option key={3} value="3">3</option>
@@ -799,7 +799,7 @@ class Formulario extends Component {
                                                     <label htmlFor="text" className="col-form-label texto-justificado" name='labelquestionsAnswers25' id='labelquestionsAnswers25'>25 -- No le alcanza el tiempo para contestar las evaluaciones, porque se pone nervioso, se bloquea(no recuerda algo).</label>
 
                                                     <select className="form-select" aria-label="Default select example" name='questionsAnswers25' id='questionsAnswers25' onChange={this.handleChange} required>
-                                                        <option >Seleccione una opcion</option>
+                                                        <option >Seleccione una opción</option>
                                                         <option key={1} value="1">1</option>
                                                         <option key={2} value="2">2</option>
                                                         <option key={3} value="3">3</option>

@@ -128,8 +128,8 @@ class EditarAgenda extends Component {
                 if (res.status === 200) {
 
                     swal({
-                        title: "CONSEJERIA",
-                        text: "Su CONSEJERIA fue Actualizada",
+                        title: "CONSEJERÍA",
+                        text: "Su CONSEJERÍA fue Actualizada",
                         icon: "success",
                         buttons: "Aceptar"
                     }).then(function () {
@@ -137,7 +137,7 @@ class EditarAgenda extends Component {
                     })
                 } if (res.status === 400) {
                     swal({
-                        title: "CONSEJERIA",
+                        title: "CONSEJERÍA",
                         text: "Verifique los campos",
                         icon: "warning",
                         buttons: "Aceptar"
@@ -150,14 +150,14 @@ class EditarAgenda extends Component {
 
                 if (error.response.status === 500) {
                     swal({
-                        title: "CONSEJERIA",
+                        title: "CONSEJERÍA",
                         text: "Error en el servidor",
                         icon: "error",
                         buttons: "Aceptar"
                     })
                 } if (error.response.status === 400) {
                     swal({
-                        title: "CONSEJERIA",
+                        title: "CONSEJERÍA",
                         text: "Verifique los campos",
                         icon: "warning",
                         buttons: "Aceptar"

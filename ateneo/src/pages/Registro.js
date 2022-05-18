@@ -239,7 +239,7 @@ class Registro extends Component {
                                                 <label htmlFor="text" className="col-sm-3 col-form-label">Tipo de usuario</label>
                                                 <div className="col-sm-9">
                                                     <select className="form-select" aria-label="Default select example" name='UserType' id='UserType' onClick={this.mostrar} onChange={this.handleChange} required>
-                                                        <option value="100">Seleccione una opcion</option>
+                                                        <option value="100">Seleccione una opción</option>
                                                         {this.state.userTypesList.map(element => (
                                                             <option key={element.id} value={element.id}>{element.name}</option>
                                                         )
@@ -289,7 +289,7 @@ class Registro extends Component {
                                                     <label htmlFor="text" className="col-sm-3 col-form-label">Tipo de documento</label>
                                                     <div className="col-sm-9">
                                                         <select className="form-select" aria-label="Default select example" name="DocumentType" id='DocumentType' onChange={this.handleChange}>
-                                                            <option value="100">Seleccione una opcion</option>
+                                                            <option value="100">Seleccione una opción</option>
                                                             {this.state.documentTypesList.map(element => (
                                                                 <option key={element.id} value={element.id}>{element.name}</option>
                                                             )
@@ -304,10 +304,10 @@ class Registro extends Component {
                                                     </div>
                                                 </div>
                                                 <div className="form-group row mb-4">
-                                                    <label htmlFor="text" className="col-sm-3 col-form-label">Programa Academico</label>
+                                                    <label htmlFor="text" className="col-sm-3 col-form-label">Programa Académico</label>
                                                     <div className="col-sm-9">
                                                         <select className="form-select" aria-label="Default select example" name="AcademicProgram" id='AcademicProgram' onChange={this.handleChange}>
-                                                            <option value="100">Seleccione una opcion</option>
+                                                            <option value="100">Seleccione una opción</option>
                                                             {this.state.academicProgramsList.map(element => (
                                                                 <option key={element.id} value={element.id}>{element.name}</option>
                                                             )
@@ -330,7 +330,7 @@ class Registro extends Component {
                                             <div className="form-check">
                                                 <input className="form-check-input" type="checkbox" id="TermAndConditions" name="TermAndConditions" onChange={this.handleChange} required />
                                                 <label className="form-check-label" htmlFor="defaultCheck1" >
-                                                    Aceptar <a target="_blank" href={this.state.urltermintermsandconditions} >Terminos y Condiciones</a>
+                                                    Aceptar <a target="_blank" href={this.state.urltermintermsandconditions} >Términos y Condiciones</a>
                                                 </label>
                                             </div>
 

@@ -91,8 +91,8 @@ class Citas extends Component {
                 if (res.status === 200) {
 
                     swal({
-                        title: "CONSEJERIA",
-                        text: "Su CONSEJERIA fue Asignada",
+                        title: "CONSEJERÍA",
+                        text: "Su CONSEJERÍA fue Asignada",
                         icon: "success",
                         buttons: "Aceptar"
                     }).then(function () {
@@ -100,7 +100,7 @@ class Citas extends Component {
                     })
                 } if (res.status === 400) {
                     swal({
-                        title: "CONSEJERIA",
+                        title: "CONSEJERÍA",
                         text: "Verifique los campos",
                         icon: "warning",
                         buttons: "Aceptar"
@@ -112,14 +112,14 @@ class Citas extends Component {
             }).catch(function (error) {
                 if (error.response.status === 500) {
                     swal({
-                        title: "CONSEJERIA",
+                        title: "CONSEJERÍA",
                         text: "Error en el servidor",
                         icon: "error",
                         buttons: "Aceptar"
                     })
                 } if (error.response.status === 400) {
                     swal({
-                        title: "CONSEJERIA",
+                        title: "CONSEJERÍA",
                         text: "Verifique los campos",
                         icon: "warning",
                         buttons: "Aceptar"
@@ -158,7 +158,7 @@ class Citas extends Component {
                                                             <label htmlFor="text" className="col-sm-4 col-form-label">Lugar</label>
                                                             <div className="col-sm-8">
                                                                 <select className="form-select" aria-label="Default select example" name="places" id='places' onChange={this.handleChangedemas}>
-                                                                    <option value="100">Seleccione una opcion</option>
+                                                                    <option value="100">Seleccione una opción</option>
                                                                     {this.state.places.map(element => (
                                                                         <option key={element.id} value={element.id}>{element.name}</option>
                                                                     )

@@ -82,7 +82,7 @@ class EditarRespuesta extends Component {
 
                     swal({
                         title: "RESPUESTA",
-                        text: "Su respuesta fue creada exitosomente",
+                        text: "Su respuesta fue creada exitosamente",
                         icon: "success",
                         buttons: "Aceptar"
                     }).then(function () {
@@ -165,7 +165,7 @@ class EditarRespuesta extends Component {
                                                     <form className="mb-4">
 
                                                         <div className="form-group row mb-4">
-                                                            <label htmlFor="text" className="col-sm-4 col-form-label">INTRODUCCION</label>
+                                                            <label htmlFor="text" className="col-sm-4 col-form-label">INTRODUCCIÓN</label>
                                                             <div className="col-sm-8">
                                                                 <input type="text" className="form-control" defaultValue={this.state.introduction} name="introduction" id='introduction' onChange={this.handleChange} />
                                                             </div>

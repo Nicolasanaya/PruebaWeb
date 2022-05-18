@@ -89,7 +89,7 @@ class Tablarespuestas extends Component {
 
                 swal({
                     title: "Respuesta",
-                    text: "Su Respuesta se elimino con exitoso",
+                    text: "Su Respuesta se eliminó  con exitoso",
                     icon: "success",
                     buttons: "Aceptar"
                 }).then(function () {
@@ -127,7 +127,7 @@ class Tablarespuestas extends Component {
 
         const data = this.state.answers.map(elem => (
             {
-                id: elem.id, introduction: elem.introduction, answer: elem.answer
+                id: elem.id, introduction: elem.introduction, answer: <a target="_blank" href={elem.answer}>Link</a>
             }
         ))
         const cooki = new Cookies();

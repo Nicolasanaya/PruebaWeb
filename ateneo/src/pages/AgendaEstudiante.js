@@ -56,15 +56,15 @@ class AgendaEstudiante extends Component {
     
                 if (error.response.status === 500) {
                     swal({
-                        title: "TUTORIA",
+                        title: "TUTORÍA",
                         text: "Error en el servidor",
                         icon: "error",
                         buttons: "Aceptar"
                     })
                 } if (error.response.status === 400) {
                     swal({
-                        title: "TUTORIA",
-                        text: "No tiene citas el dia Seleccionado",
+                        title: "TUTORÍA",
+                        text: "No tiene citas el día Seleccionado",
                         icon: "warning",
                         buttons: "Aceptar"
                     })
@@ -92,15 +92,15 @@ class AgendaEstudiante extends Component {
     
                 if (error.response.status === 500) {
                     swal({
-                        title: "TUTORIA",
+                        title: "TUTORÍA",
                         text: "Error en el servidor",
                         icon: "error",
                         buttons: "Aceptar"
                     })
                 } if (error.response.status === 400) {
                     swal({
-                        title: "TUTORIA",
-                        text: "No tiene citas el dia Seleccionado",
+                        title: "TUTORÍA",
+                        text: "No tiene citas el día Seleccionado",
                         icon: "warning",
                         buttons: "Aceptar"
                     })
@@ -132,8 +132,8 @@ class AgendaEstudiante extends Component {
             if (res.status === 200) {
 
                 swal({
-                    title: "TUTORIA",
-                    text: "Su TUTORIA se elimino con exitoso",
+                    title: "TUTORÍA",
+                    text: "Su TUTORÍA se eliminó con exitoso",
                     icon: "success",
                     buttons: "Aceptar"
                 }).then(function () {
@@ -141,7 +141,7 @@ class AgendaEstudiante extends Component {
                 })
             } if (res.status === 400) {
                 swal({
-                    title: "TUTORIA",
+                    title: "TUTORÍA",
                     text: "Verifique la tabla",
                     icon: "warning",
                     buttons: "Aceptar"
@@ -155,15 +155,15 @@ class AgendaEstudiante extends Component {
 
             if (error.response.status === 500) {
                 swal({
-                    title: "TUTORIA",
+                    title: "TUTORÍA",
                     text: "Error en el servidor",
                     icon: "error",
                     buttons: "Aceptar"
                 })
             } if (error.response.status === 400) {
                 swal({
-                    title: "TUTORIA",
-                    text: "No tiene citas el dia Seleccionado",
+                    title: "TUTORÍA",
+                    text: "No tiene citas el día Seleccionado",
                     icon: "warning",
                     buttons: "Aceptar"
                 })
@@ -191,7 +191,7 @@ class AgendaEstudiante extends Component {
                                                 <div className='align-items-center'>
                                                     <div className=' p-4 text-black'>
                                                         <section className="centrarelementos">
-                                                            <h2 className="text-center mb-4">ATENEO TUTORIAS</h2>
+                                                            <h2 className="text-center mb-4">ATENEO TUTORÍAS</h2>
                                                         </section>
                                                         <form className="form">
                                                             <div className="mb-4 centrarelementos">

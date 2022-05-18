@@ -79,7 +79,7 @@ class RolesEstudiantesPerfil extends Component {
 
                     swal({
                         title: "Rol",
-                        text: "Su rol se actualizo con exito",
+                        text: "Su rol se actualizo con éxito",
                         icon: "success",
                         buttons: "Aceptar"
                     }).then(function () {

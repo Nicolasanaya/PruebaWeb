@@ -62,15 +62,15 @@ class AgendaDocente extends Component {
 
                 if (error.response.status === 500) {
                     swal({
-                        title: "TUTORIA",
+                        title: "TUTORÍA",
                         text: "Error en el servidor",
                         icon: "error",
                         buttons: "Aceptar"
                     })
                 } if (error.response.status === 400) {
                     swal({
-                        title: "TUTORIA",
-                        text: "No tiene citas el dia Seleccionado",
+                        title: "TUTORÍA",
+                        text: "No tiene citas el día Seleccionado",
                         icon: "warning",
                         buttons: "Aceptar"
                     })
@@ -99,15 +99,15 @@ class AgendaDocente extends Component {
 
                 if (error.response.status === 500) {
                     swal({
-                        title: "TUTORIA",
+                        title: "TUTORÍA",
                         text: "Error en el servidor",
                         icon: "error",
                         buttons: "Aceptar"
                     })
                 } if (error.response.status === 400) {
                     swal({
-                        title: "TUTORIA",
-                        text: "No tiene citas el dia Seleccionado",
+                        title: "TUTORÍA",
+                        text: "No tiene citas el día Seleccionado",
                         icon: "warning",
                         buttons: "Aceptar"
                     })
@@ -178,7 +178,7 @@ class AgendaDocente extends Component {
                                                                                 <MDBCardSubTitle><b>Fecha =</b> {elem.date}</MDBCardSubTitle>
                                                                                 <MDBCardSubTitle><b>Tiempo =</b> {elem.time}</MDBCardSubTitle>
                                                                                 <MDBCardSubTitle><b>Lugar =</b> {elem.place}</MDBCardSubTitle>
-                                                                                <MDBCardSubTitle><b>Numero de estudiantes =</b> {elem.studentsNumber}</MDBCardSubTitle>
+                                                                                <MDBCardSubTitle><b>Número de estudiantes =</b> {elem.studentsNumber}</MDBCardSubTitle>
                                                                                 <div className="form-group row">
                                                                                     <IconButton aria-label="QR" id={elem.id} onClick={(e) => this.QRGenerator(elem.id, e)} sx={{ fontSize: 40 }}>
                                                                                         <QrCode2Icon sx={{ fontSize: 60, color: '#000' }} />

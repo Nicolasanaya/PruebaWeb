@@ -217,7 +217,7 @@ class Lugar extends Component {
                                                 <div className=' p-4 text-black'>
                                                     <section className="centrarelementos form">
                                                         <img className="logo" src={logo} alt="logo" ></img>
-                                                        <b><h2 className="text-center mb-4">LUGAR DE TUTORIAS</h2></b>
+                                                        <b><h2 className="text-center mb-4">LUGAR DE TUTORÍAS</h2></b>
                                                     </section>
                                                     <form >
 
@@ -225,7 +225,7 @@ class Lugar extends Component {
                                                             <label htmlFor="text" >LUGARES</label>
 
                                                             <select className="form-select tamañoinput" aria-label="Default select example" name='Petition' id='Petition' onClick={this.Peticionesgetid} onChange={this.handleChange}>
-                                                                <option value="100">Seleccione una opcion</option>
+                                                                <option value="100">Seleccione una opción</option>
                                                                 {this.state.places.map(element => (
                                                                     <option key={element.name} value={element.id} >{element.name}</option>
                                                                 )
@@ -244,7 +244,7 @@ class Lugar extends Component {
                                                             <button type="button" className="btn btn-outline-dark form-label boton-color" onClick={this.CrearPut}>ACTUALIZAR</button>
                                                         </div>
 
-                                                        <b><h2 className="text-center mb-4">CREAR LUGAR TUTORIAS</h2></b>
+                                                        <b><h2 className="text-center mb-4">CREAR LUGAR TUTORÍAS</h2></b>
 
                                                         <div className="form-outline mb-4">
                                                             <label htmlFor="text" > LUGAR</label>

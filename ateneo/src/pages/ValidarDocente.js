@@ -95,7 +95,7 @@ class ValidarDocente extends Component {
 
                 swal({
                     title: "Validar",
-                    text: "Su validacion fue exitosa",
+                    text: "Su validación  fue exitosa",
                     icon: "success",
                     buttons: "Aceptar"
                 }).then(function () {

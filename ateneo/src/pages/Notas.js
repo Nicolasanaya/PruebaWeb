@@ -250,7 +250,7 @@ class Notas extends Component {
                                                             <label htmlFor="text" className="col-sm-2 col-form-label">MATERIA</label>
                                                             <div className="col-sm-10">
                                                                 <select className="form-select" aria-label="Default select example" name='materia' id='materia' onChange={this.handleChange} required>
-                                                                    <option value="100">Seleccione una opcion</option>
+                                                                    <option value="100">Seleccione una opción</option>
                                                                     {this.state.subjects.map(element => (
                                                                         <option key={element.id} value={element.id}>{element.subject}</option>
                                                                     )

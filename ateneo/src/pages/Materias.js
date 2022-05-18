@@ -49,7 +49,7 @@ class Materias extends Component {
             } if (resp.status === 400) {
                 swal({
                     title: "Materia",
-                    text: "No exite la materia registrada o campo de nombre vacio",
+                    text: "No existe  la materia registrada o campo de nombre vacío",
                     icon: "warning",
                     buttons: "Aceptar"
                 })
@@ -125,7 +125,7 @@ class Materias extends Component {
                                                         <label htmlFor="text" className="mb-4">TIPO DE MATERIA</label>
                                                         <div className="col-sm-10 mb-4">
                                                             <select className="form-select" aria-label="Default select example" name='Subject' id='Subject' onChange={this.handleChange}>
-                                                                <option value="100">Seleccione una opcion</option>
+                                                                <option value="100">Seleccione una opción</option>
                                                                 {this.state.subjects.map(element => (
                                                                     <option key={element.id} value={element.id} >{element.name}</option>
                                                                 )

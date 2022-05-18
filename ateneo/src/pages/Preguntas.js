@@ -87,21 +87,21 @@ class Preguntas extends Component {
             if (error.response.status === 400) {
                 swal({
                     title: "Pregunta",
-                    text: "Comuniquese con el soporte",
+                    text: "Comuníquese con el soporte",
                     icon: "warning",
                     buttons: "Aceptar"
                 });
             } else if (error.response.status === 404) {
                 swal({
                     title: "Pregunta",
-                    text: "Comuniquese con el soporte",
+                    text: "Comuníquese con el soporte",
                     icon: "warning",
                     buttons: "Aceptar"
                 });
             } else if (error.response.status === 401) {
                 swal({
                     title: "Pregunta",
-                    text: "Comuniquese con el soporte",
+                    text: "Comuníquese con el soporte",
                     icon: "warning",
                     buttons: "Aceptar"
                 });
@@ -109,7 +109,7 @@ class Preguntas extends Component {
             } else if (error.response.status === 500) {
                 swal({
                     title: "Servicio al Cliente",
-                    text: "Comuniquese con el soporte",
+                    text: "Comuníquese con el soporte",
                     icon: "warning",
                     buttons: "Aceptar"
                 });
@@ -141,7 +141,7 @@ class Preguntas extends Component {
                                                             <label htmlFor="text" >MATERIA</label>
 
                                                             <select className="form-select tamañoinput" aria-label="Default select example" name='subjects' id='subjects' onChange={this.handleChange}>
-                                                                <option value="100">Seleccione una opcion</option>
+                                                                <option value="100">Seleccione una opción</option>
                                                                 {this.state.subjects.map(element => (
                                                                     <option key={element.id} value={element.id} >{element.name}</option>
                                                                 )
