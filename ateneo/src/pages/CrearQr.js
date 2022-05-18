@@ -16,7 +16,7 @@ class CrearQr extends Component {
         const cooki = new Cookies();
         const datosAgenda = cooki.get('datosdocQR')
         this.state.datosdocQR = datosAgenda
-        const urlqr = "http://192.168.1.5:3000" + "/Es/" + datosAgenda
+        const urlqr = "http://www.invsis.xyz" + "/Es/" + datosAgenda
         return (
             <div >
                 <div className='sb-nav-fixed'>
